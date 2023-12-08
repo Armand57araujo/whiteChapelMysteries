@@ -17,3 +17,12 @@ const TypingWithSound = () => {
             strings: [text],
             typeSpeed: 50, // Adjust speed as needed
             onStringTyped: function (arrayPos, self) { 
+                  // Play sound on each character typed
+        const currentChar = self.strings[arrayPos][self.charIndex];
+        if (currentChar !== ' ') {
+          // Exclude spaces from triggering sound
+          typingSound.seek(0); // Reset sound to start
+          typingSound.play();
+        }
+      },
+    });
