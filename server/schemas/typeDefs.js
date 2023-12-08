@@ -8,20 +8,27 @@ const typeDefs = `
 
   type Save {
     _id: ID
-    inventory: [String]
+    inventory: [Item]
     notes: String
   }
 
+  type Item {
+    _id: ID
+    itemName: String
+    description: String
+  }
+
   type Query {
+    save(_id: ID): Save
     me: User
   }
 
   type Mutation {
     addUser(email: String!, password: String!): Auth
-    addSave(inventory: [String], notes: String): Save
-    updateNote(notes: String): String
-    addItem(inventory: [String]): [String]
-    removeSave(_id, ID!): User
+    addSave(inventory: [Item], notes: String): Save
+    updateSave(inventory: [Item], notes: String): Save
+    addItem(saveId: ID!): Save
+    removeSave(saveId, ID!): User
     login(email: String!, password: String!): Auth
   }
 `;
