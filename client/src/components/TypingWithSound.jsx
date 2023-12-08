@@ -26,3 +26,9 @@ const TypingWithSound = () => {
         }
       },
     });
+    return () => {
+        // Clean up Typed instance and sound on unmount
+        typed.destroy();
+        typingSound.unload();
+      };
+    }, []);
