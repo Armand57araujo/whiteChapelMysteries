@@ -32,3 +32,12 @@ const TypingWithSound = () => {
         typingSound.unload();
       };
     }, []);
+    return (
+        <div>
+          {/* Your content */}
+          <div id="typed"></div>
+        </div>
+      );
+    };
+    
+    export default TypingWithSound;
