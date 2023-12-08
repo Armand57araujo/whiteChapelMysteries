@@ -70,10 +70,26 @@ const resolvers = {
     },
     addItem: async (parent, args, context) => {
       if(context.user) {
-        const item = 
+        return Save.findOneAndUpdate(
+          {_id: args._id},
+          {
+            $addToSet: { inventory: {itemName: args.itemName, description: args.description }}
+          },
+          { new: true }
+        );
+      }
+    },
+    removeSave: async(parent, args, context) => {
+      if(context.user) {
+        const save = await Save.findOneAndDelete({_id: args._id});
+
+        if(!save) {
+          throw AuthenticationError;
+        }
+        
+        return save;
       }
     }
-
 
 
   }
