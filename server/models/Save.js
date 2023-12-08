@@ -1,12 +1,8 @@
 const { Schema, model } = require('mongoose');
+const itemSchema = require('./Item');
 
 const saveSchema = new Schema({
-  inventory: [
-    {
-      type: String,
-      default: []
-    }
-  ],
+  inventory: [itemSchema],
   notes: {
     type: String,
     default: '',
@@ -15,4 +11,4 @@ const saveSchema = new Schema({
 
 const Save = model('Save', saveSchema);
 
-model.exports = Save;
+module.exports = Save;
