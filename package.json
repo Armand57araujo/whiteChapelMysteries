@@ -15,5 +15,9 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "typed.js": "^2.1.0"
   }
 }
