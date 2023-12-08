@@ -11,3 +11,7 @@
     line-height: 1.5;
     margin: 0;
   }
+
+  .dialogue-box {
+    image-rendering: pixelated;
+  }
