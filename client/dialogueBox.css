@@ -5,3 +5,9 @@
     padding: 20px;
   }
 
+  .dialogue-text p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
