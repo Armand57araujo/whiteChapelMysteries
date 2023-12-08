@@ -7,7 +7,14 @@
 /* added by ian sills chadwick bartholemuel the third */
 .errorPage{
   background-color: red;
-  
+}
+
+body{
+  background-image:url(assets/images/menu/menu-background.jpg);
+  background-size:  65% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 /* added by ian sills chadwick bartholemuel the third */
