@@ -3,15 +3,19 @@
     border: 4px solid #fff;
     border-radius: 8px;
     padding: 20px;
-  }
+    width: 300px;
+    height: auto;
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+}
 
-  .dialogue-text p {
+.dialogue-text p {
     color: #fff;
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
-  }
+}
 
-  .dialogue-box {
+.dialogue-box {
     image-rendering: pixelated;
-  }
+}
