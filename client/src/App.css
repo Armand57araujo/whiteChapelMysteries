@@ -5,16 +5,35 @@
 }
 
 /* added by ian sills chadwick bartholemuel the third */
+#root{
+  font-family: ;
+}
+
 .errorPage{
   background-color: red;
 }
 
 body{
   background-image:url(assets/images/menu/menu-background.jpg);
-  background-size:  65% 100%;
+  background-size:  75% 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
 
+.homeBanner{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 400px;
+  background-color: grey;
+  margin-right:240px ;
+  position: absolute;
+  right: 0;
+  top:0; 
+}
+
+.font{
+  font-size: 20px;
 }
 
 /* added by ian sills chadwick bartholemuel the third */
