@@ -37,10 +37,9 @@ function App() {
     <>
       <ApolloProvider client={client}>
         <div className="App">
-          <h1>Welcome to My React App</h1>
-          {/* <DialogueBox /> */}
+           <DialogueBox /> 
         </div>
-        {/* <Outlet/> */}
+         <Outlet/> 
       </ApolloProvider>
     </>
   );
