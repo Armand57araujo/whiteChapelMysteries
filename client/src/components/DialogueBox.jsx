@@ -35,7 +35,7 @@ const DialogueBox = () => {
         <p>Hello there! This is an 8-bit dialogue box.</p>
       </div>
       <TypingWithSound text={generatedDialogue} />
-      <button onClick={generateDialogue}>Next Dialogue</button>
+      <button onClick={generateDialogue}> ▶️ </button>
     </div>
   );
 };
