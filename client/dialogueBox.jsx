@@ -1,5 +1,5 @@
 import React from "react";
-import './dialogueBox.css';
+import './src/DialogueBox.css';
 
 
 const DialogueBox = () => {
