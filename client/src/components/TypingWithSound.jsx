@@ -5,11 +5,11 @@ import { Howl } from 'howler';
 
 const TypingWithSound = () => {
     useEffect(() => {
-        const text = 'Welcome to White Chapel Mysteries';
+        const text = '';
 
         // Sound setup using Howler.js
         const typingSound = new Howl({
-            src: ['path/to/typing-sound.mp3'], // Replace with your audio file path
+            src: ['./assets/sounds/typewriter'],  // Replace with your audio file path
         });
 
         // Create a new instance of Typed.js
