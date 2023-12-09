@@ -1,5 +1,4 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -45,6 +44,9 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  /* added by ian sills chadwick bartholemuel sampsonite the third */
+  width: 200px;
+  /* added by ian sills chadwick bartholemuel sampsonite the third */
 }
 button:hover {
   border-color: #646cff;

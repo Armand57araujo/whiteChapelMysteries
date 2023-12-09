@@ -4,13 +4,56 @@
   margin-top: 50px;
 }
 
-/* added by ian sills chadwick bartholemuel the third */
-.errorPage{
-  background-color: red;
-  
+/* added by ian sills chadwick bartholemuel sampsonite the third */
+#root{
+  font-family: 'DotGothic16', sans-serif;
 }
 
-/* added by ian sills chadwick bartholemuel the third */
+.errorPage{
+  background-color: red;
+}
+
+body{
+  background-image:url(assets/images/menu/menu-background.jpg);
+  background-size:  75% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.homeBanner{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 400px;
+  background-color: grey;
+  margin-right:240px ;
+  position: absolute;
+  right: 0;
+  top:0; 
+}
+
+.font{
+  font-size: 20px;
+}
+
+.margin-top{
+  margin-top: 50px;
+}
+
+.margin-topsml{
+  margin-top: 15px;
+}
+
+
+.title{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 20px; 
+}
+
+/* added by ian sills chadwick bartholemuel sampsonite the third */
 
 
 
