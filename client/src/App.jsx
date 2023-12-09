@@ -36,10 +36,9 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <div className="App">
-           <DialogueBox /> 
-        </div>
-         <Outlet/> 
+       
+          <Outlet/> 
+           {/* <DialogueBox />  */}
       </ApolloProvider>
     </>
   );
