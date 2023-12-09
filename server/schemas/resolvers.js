@@ -6,7 +6,7 @@ const resolvers = {
     save: async (parent, args, context) => {
       
       if(context.user) {
-        const user = await User.finOne({_id:context.user._id})
+        const user = await User.findOne({_id:context.user._id})
         return await Save.findOne({ _id: user.currentSave });
       }
       throw AuthenticationError;
