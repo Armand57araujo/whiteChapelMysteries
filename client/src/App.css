@@ -4,7 +4,7 @@
   margin-top: 50px;
 }
 
-/* added by ian sills chadwick bartholemuel the third */
+/* added by ian sills chadwick bartholemuel sampsonite the third */
 #root{
   font-family: ;
 }
@@ -36,7 +36,24 @@ body{
   font-size: 20px;
 }
 
-/* added by ian sills chadwick bartholemuel the third */
+.margin-top{
+  margin-top: 50px;
+}
+
+.margin-topsml{
+  margin-top: 15px;
+}
+
+
+.title{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+/* added by ian sills chadwick bartholemuel sampsonite the third */
 
 
 

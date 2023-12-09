@@ -4,14 +4,20 @@ const Index = () => {
 
 return(
     <>
+        <div className="title">
+            hiiiiiiiiii
+        </div>
         <div className="homeBanner">
-            <div>
+            <div className="center">
                 <div>
-                    <h1 className="">Menu</h1>
+                    <h1 className="">Menu:</h1>
                 </div>
-                <di>
-                    <button className="font">Log In To Play</button>
-                </di>
+                <div>
+                    <button className="font margin-topsml">Log In To Play</button>
+                </div>
+                <div>
+                    <button className="font margin-top">About Us</button>
+                </div>
             </div>
         </div>
 
