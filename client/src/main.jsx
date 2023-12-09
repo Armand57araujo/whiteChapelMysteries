@@ -4,6 +4,16 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Index from './pages/Index.jsx'
+import Login from './pages/login.jsx'
+import Signup from './pages/signup.jsx'
+import Saves from './pages/saves.jsx'
+import Office from './pages/office.jsx'
+import MitreSquare from './pages/MitreSquare.jsx'
+import DruwardStreet from './pages/DruwardStreet.jsx'
+import HanburyStreet from './pages/HanburyStreet.jsx'
+import DorsetStreet from './pages/DorsetStreet.jsx'
+import DutfieldYard from './pages/DutfieldYard.jsx'
+import Wharf from './pages/Wharf.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,9 +58,6 @@ const router = createBrowserRouter([
     ]
   }
 ])
-
-
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
