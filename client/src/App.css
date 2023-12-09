@@ -48,9 +48,9 @@ body{
 .title{
   position: absolute;
   top: 20%;
-  left: 30%;
+  left: 40%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 20px; 
 }
 
 /* added by ian sills chadwick bartholemuel sampsonite the third */

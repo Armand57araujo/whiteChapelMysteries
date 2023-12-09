@@ -5,7 +5,7 @@ const Index = () => {
 return(
     <>
         <div className="title">
-            hiiiiiiiiii
+            <h1>White Chapel Mysteries</h1>
         </div>
         <div className="homeBanner">
             <div className="center">
