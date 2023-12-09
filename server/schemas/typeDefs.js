@@ -3,6 +3,7 @@ const typeDefs = `
     _id: ID
     email: String
     password: String
+    currentSave: String
     saves: [Save]
   }
 
