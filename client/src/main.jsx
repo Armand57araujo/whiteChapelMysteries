@@ -14,6 +14,7 @@ import HanburyStreet from './pages/HanburyStreet.jsx'
 import DorsetStreet from './pages/DorsetStreet.jsx'
 import DutfieldYard from './pages/DutfieldYard.jsx'
 import Wharf from './pages/Wharf.jsx'
+// import * as serviceWorker from './serviceWorker';
 
 const router = createBrowserRouter([
   {
@@ -62,3 +63,4 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
+// serviceWorker.register();
