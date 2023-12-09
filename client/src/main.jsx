@@ -5,9 +5,6 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Index from './pages/index.jsx'
 
-
-
-
 const router = createBrowserRouter([
   {
     path: '/',
@@ -17,7 +14,37 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Index/>
-      },
+      },{
+        path: '/login',
+        element: <Login />
+      },{
+        path: '/signup',
+        element: <Signup />
+      },{
+        path: '/saves',
+        element: <Saves />
+      },{
+        path: '/office',
+        element: <Office />
+      },{
+        path: '/mitresquare',
+        element: <MitreSquare />
+      },{
+        path: '/druwardstreet',
+        element: <DruwardStreet />
+      },{
+        path: '/hanburystreet',
+        element: <HanburyStreet />
+      },{
+        path: '/dorsetstreet',
+        element: <DorsetStreet />
+      },{
+        path: '/dutfieldyard',
+        element: <DutfieldYard />
+      },{
+        path: '/wharf',
+        element: <Wharf/>
+      }
     ]
   }
 ])
