@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Index from './pages/Index.jsx'
-import Login from './pages/login.jsx'
-import Signup from './pages/signup.jsx'
+import Index from './pages/index.jsx'
+import AboutUs from './pages/AboutUs.jsx'
+import Login from './pages/Login.jsx'
+import Signup from './pages/Signup.jsx'
 import Saves from './pages/saves.jsx'
 import Office from './pages/office.jsx'
 import MitreSquare from './pages/MitreSquare.jsx'
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Index/>
+      },{
+        path: '/aboutus',
+        element: <AboutUs />
       },{
         path: '/login',
         element: <Login />

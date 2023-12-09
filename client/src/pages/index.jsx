@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 const Index = () => {
 
 return(
@@ -14,21 +16,17 @@ return(
                     <button className="font margin-topsml">Log In To Play</button>
                 </div>
                 <div>
+                    <Link to="/aboutus">
                     <button className="font margin-top">About Us</button>
+                    </Link>
                 </div>
             </div>
         </div>
 
     </>
 
-
 )
 
-
-
-
 }
-
-
 
 export default Index;
