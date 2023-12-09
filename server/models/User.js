@@ -18,7 +18,11 @@ const userSchema = new Schema({
       type: Schema.Types.ObjectId,
       ref: 'Save',
     }
-  ]
+  ],
+  currentSave: {
+    type: String,
+    default: ''
+  }
 });
 
 userSchema.pre('save', async function (next) {
