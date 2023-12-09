@@ -1,7 +1,9 @@
 const Index = () => {
 
+
 return(
-    <>
+    <div>
+     <img src="assets/images/menu/menu-background.jpg" className="homeBackground"/>
         <div className="title">
             <h1>White Chapel Mysteries</h1>
         </div>
@@ -18,8 +20,8 @@ return(
                 </div>
             </div>
         </div>
-
-    </>
+    
+    </div>
 
 
 )
