@@ -1,0 +1,9 @@
+.pixelated-button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.pixelated-button:hover{
+    filter: saturate(3) grayscale(1) brightness(0.5);
+}

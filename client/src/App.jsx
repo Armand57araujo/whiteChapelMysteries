@@ -9,6 +9,7 @@ import {
 } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
 import {setContext} from '@apollo/client/link/context'
+import './styles.css';
 
 
 const httpLink = createHttpLink({
@@ -27,7 +28,7 @@ const httpLink = createHttpLink({
 //   return (
 //     <div className="App">
 //       <h1>Welcome To White Chapel Mysteries</h1>
-//       <button onClick={startGame}>Start Game</button>
+//       <button className = "pixelated-button" onClick={startGame}>Start Game</button>
 //       <DialogueBox />
 //     </div>
 //   );
