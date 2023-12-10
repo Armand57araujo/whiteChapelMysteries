@@ -1,3 +1,4 @@
+import LoginLogout from "../components/LoginLogoutButton";
 const Index = () => {
 
 return(
@@ -15,6 +16,9 @@ return(
                 </div>
                 <div>
                     <button className="font margin-top">About Us</button>
+                </div>
+                <div>
+                    <LoginLogout></LoginLogout>
                 </div>
             </div>
         </div>
