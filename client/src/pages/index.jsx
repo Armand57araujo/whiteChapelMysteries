@@ -14,13 +14,13 @@ return(
                     <h1 className="">Menu:</h1>
                 </div>
                 <div>
-                    <button className="font margin-topsml">Log In To Play</button>
+                    <LoginLogout />
                 </div>
                 <div>
                     <button className="font margin-top">About Us</button>
                 </div>
                 <div>
-                    <LoginLogout></LoginLogout>
+                    
                 </div>
             </div>
         </div>
