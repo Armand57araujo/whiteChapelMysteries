@@ -13,12 +13,7 @@
   background-color: red;
 }
 
-body{
-  background-image:url(assets/images/menu/menu-background.jpg);
-  background-size:  75% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 .homeBanner{
   display: flex;
