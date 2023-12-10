@@ -15,6 +15,24 @@ const httpLink = createHttpLink({
   uri: '/graphql',
 });
 
+// function App() {
+
+//   const startGame = () => {
+// //Add logic to start game
+
+//     console.log("starting game...")
+//   };
+
+
+//   return (
+//     <div className="App">
+//       <h1>Welcome To White Chapel Mysteries</h1>
+//       <button onClick={startGame}>Start Game</button>
+//       <DialogueBox />
+//     </div>
+//   );
+// }
+
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
   
