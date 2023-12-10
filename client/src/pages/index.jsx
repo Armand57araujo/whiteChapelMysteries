@@ -1,4 +1,7 @@
+
 import {Link} from 'react-router-dom';
+
+import LoginLogout from "../components/LoginLogoutButton";
 
 const Index = () => {
 
@@ -15,12 +18,15 @@ return(
                     <h1 className="">Menu:</h1>
                 </div>
                 <div>
-                    <button className="font margin-topsml">Log In To Play</button>
+                    <LoginLogout />
                 </div>
                 <div>
                     <Link to="/aboutus">
                     <button className="font margin-top">About Us</button>
                     </Link>
+                </div>
+                <div>
+                    
                 </div>
             </div>
         </div>
