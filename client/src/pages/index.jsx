@@ -1,4 +1,8 @@
+
+import {Link} from 'react-router-dom';
+
 import LoginLogout from "../components/LoginLogoutButton";
+
 const Index = () => {
 
 
@@ -17,7 +21,9 @@ return(
                     <LoginLogout />
                 </div>
                 <div>
+                    <Link to="/aboutus">
                     <button className="font margin-top">About Us</button>
+                    </Link>
                 </div>
                 <div>
                     
@@ -27,14 +33,8 @@ return(
     
     </div>
 
-
 )
 
-
-
-
 }
-
-
 
 export default Index;
