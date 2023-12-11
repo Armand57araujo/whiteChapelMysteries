@@ -71,6 +71,14 @@ textarea {
   top:0; 
   border: 50px solid black;
 }
+.saveborder{
+  border-bottom: 7px solid black;
+  border-radius: 5px; 
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
 
 
 

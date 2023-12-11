@@ -45,7 +45,7 @@ const Map = (props) => {
         <button className="druwardStBtn"> Druward Street </button>
         <button className="dutfieldYardBtn">{dutfield} </button>
         <button className="hanburyStBtn"> Hanbury Street </button>
-        <button className="wharfBtn"> Wharf --> </button> 
+        <button className="wharfBtn"> Wharf  </button> 
         </div> 
         : null}
         {currentInventory.length === 6 ? 
@@ -54,7 +54,7 @@ const Map = (props) => {
         <button className="druwardStBtn"> Druward Street </button>
         <button className="dutfieldYardBtn">{dutfield} </button>
         <button className="hanburyStBtn"> Hanbury Street </button>
-        <button className="wharfBtn"> Wharf --> </button> 
+        <button className="wharfBtn"> Wharf </button> 
         <button className="dorsetStBtn">Dorset Street </button>
         </div> 
         : null}
