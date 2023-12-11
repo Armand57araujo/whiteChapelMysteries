@@ -1,7 +1,11 @@
 export default function Notepad() {
   return (
     <>
-    <textarea rows={15}></textarea>
+    <div id='notepad-outer'>
+      <textarea id='notepad-inner'  cols={17} rows={10}>
+      </textarea>
+    </div>
+    
     </>
   );
 }

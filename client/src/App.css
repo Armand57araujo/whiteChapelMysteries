@@ -13,8 +13,23 @@
   background-color: red;
 }
 
-textarea {
+#notepad-inner {
   resize: none;
+  background: transparent;
+  border: none;
+  color: black;
+  outline: none;
+  margin-top: 50px;
+  margin-left: 25px;
+  height: 490px;
+  width: 360px;
+}
+
+#notepad-outer {
+  background-image: url('assets/images/notepad/notepad.jpg');
+  background-repeat: no-repeat;
+  height: 580px;
+  width: 394px;
 }
 
 .homeBanner{
@@ -52,9 +67,6 @@ textarea {
 
 /* added by ian sills chadwick bartholemuel sampsonite the third */
 /*Noice */
-
-.pixelated
-
 
 
 
