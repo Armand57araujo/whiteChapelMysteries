@@ -37,16 +37,63 @@ body {
   transform: translate(-50%);
   width: 74%;
   height: 100%;
-  
-
 } 
 
-.backBtn{
-  
+.officeBackground{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  height: 100%;
+  z-index: 0;
 }
 
-.aboutHeader{
-  top
+#mapBtn{
+  position: absolute;
+  border: 2px solid white;
+  z-index: 2;
+  left: 70%;
+}
+
+#mapBtn:hover {
+  border: 1px solid blue;
+}
+
+#notesBtn{
+  position: absolute;
+  border: 2px solid white;
+  z-index: 2;
+  top: 680px;
+  left: 43.5%;
+}
+
+#notesBtn:hover {
+  border: 1px solid blue;
+}
+
+#inventoryBtn{
+  position: absolute;
+  border: 2px solid white;
+  z-index: 2;
+  top: 790px;
+  left: 43.5%;
+}
+
+#inventoryBtn:hover {
+  border: 1px solid blue;
+}
+
+#backBtn{
+  position: absolute;
+  border: 2px solid white;
+  z-index: 2;
+  top: 840px;
+  left: 72%;
+}
+
+#backBtn:hover {
+  border: 1px solid blue;
 }
 
 h1 {
