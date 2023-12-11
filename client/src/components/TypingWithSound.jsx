@@ -7,7 +7,7 @@ const TypingWithSound = (props) => {
   const [count, setCount] = useState(0);
   const [dialogue, setDialogue] = useState(props.arr[0]);
   
-
+  // function handles all dialogue passed in for the current location
   const handleDialogueChange = () => {
     console.log("you clicked!")
     if(count < props.arr.length){
@@ -44,6 +44,8 @@ const TypingWithSound = (props) => {
         typingSound.unload();
       };
     }, [dialogue]);
+
+    // return dialogue box, switches through passed in dialogue array
     return (
         <div>
           <div id="typed" onClick={handleDialogueChange}></div>
