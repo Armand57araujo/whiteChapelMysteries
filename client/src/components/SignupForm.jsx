@@ -56,7 +56,7 @@ const SignupForm = () => {
   return (
     <>
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-        <Alert dimissible onClose={ () => setShowAlert(false)} show={showAlert} variant='danger'>
+        <Alert dismissible onClose={ () => setShowAlert(false)} show={showAlert} variant='danger'>
           something went wrong with your signup!
         </Alert>
 
