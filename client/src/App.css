@@ -13,7 +13,9 @@
   background-color: red;
 }
 
-
+textarea {
+  resize: none;
+}
 
 .homeBanner{
   display: flex;

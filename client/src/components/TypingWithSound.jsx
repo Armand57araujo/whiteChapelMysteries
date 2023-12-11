@@ -1,15 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState} from 'react';
 import Typed from 'typed.js';
 import { Howl } from 'howler';
 
+const TypingWithSound = (props) => {
 
-const TypingWithSound = () => {
+  const [count, setCount] = useState(0);
+  const [dialogue, setDialogue] = useState(props.arr[0]);
+  
+  // function handles all dialogue passed in for the current location
+  const handleDialogueChange = () => {
+    console.log("you clicked!")
+    if(count < props.arr.length){
+      setDialogue(props.arr[count])
+      setCount(count+1)
+    }
+  }
+
     useEffect(() => {
-        const text = '';
+        const text = dialogue;
 
         // Sound setup using Howler.js
         const typingSound = new Howl({
-            src: ['./assets/sounds/typewriter'],  // Replace with your audio file path
+            src: ['assets/sounds/typewriter.ogg'],  // Replace with your audio file path
         });
 
         // Create a new instance of Typed.js
@@ -31,11 +43,12 @@ const TypingWithSound = () => {
         typed.destroy();
         typingSound.unload();
       };
-    }, []);
+    }, [dialogue]);
+
+    // return dialogue box, switches through passed in dialogue array
     return (
         <div>
-          {/* Your content */}
-          <div id="typed"></div>
+          <div id="typed" onClick={handleDialogueChange}></div>
         </div>
       );
     };

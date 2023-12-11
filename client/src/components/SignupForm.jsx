@@ -35,15 +35,17 @@ const SignupForm = () => {
     }
 
     try {
+      console.log('attempting signup');
       const { data } = await addUser({
         variables: {
           email: userFormData.email,
           password: userFormData.password
         }
       });
-
-      Auth.log(data.addUser.token);
+      console.log('after attempting to add  user')
+      Auth.login(data.addUser.token);
     } catch (err) {
+      console.log(err);
       setShowAlert(true);
     }
 
@@ -56,7 +58,7 @@ const SignupForm = () => {
   return (
     <>
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-        <Alert dimissible onClose={ () => setShowAlert(false)} show={showAlert} variant='danger'>
+        <Alert dismissible onClose={()=>setShowAlert(false)} show={showAlert} variant='danger'>
           something went wrong with your signup!
         </Alert>
 
@@ -80,7 +82,7 @@ const SignupForm = () => {
             name='password'
             onChange={handleInputChange}
             value={userFormData.password}
-            require
+            required
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
