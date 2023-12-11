@@ -69,6 +69,47 @@ body {
   z-index: 3;
 }
 
+.mitreSquareBtn{
+  position: absolute;
+  z-index: 4;
+  left: 45.5%;
+}
+
+.druwardStBtn{
+  position: absolute;
+  z-index: 4;
+  left: 25%;
+  top: 280px;
+}
+
+.dutfieldYardBtn{
+  position: absolute;
+  z-index: 4;
+  left: 18%;
+  bottom: 120px;
+}
+
+.hanburyStBtn{
+  position: absolute;
+  z-index: 4;
+  top: 85px;
+  right: 25%;
+}
+
+.wharfBtn{
+  position: absolute;
+  z-index: 4;
+  bottom: 120px;
+  right: 18%;
+}
+
+.dorsetStBtn{
+  position: absolute;
+  z-index: 4;
+  top: 280px;
+  right: 28%;
+}
+
 #mapBtn{
   position: absolute;
   border: 2px solid white;
