@@ -18,19 +18,19 @@ const MitreSquareDialogue = [
         dialogue: "One day soon we'll put him down for good... this JACK THE RIPPER..."
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* A large crowd gathers. *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* You can clearly hear them murmuring all manner of hysterical mutterings as the y wrestle with terrible reality that hs come to London *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* Among them you see {woman#1 name} trying her best to remain calm amidst the chaos *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* You make your way over to speak with her at the police perimeter *"
     },
     {
@@ -52,11 +52,11 @@ const MitreSquareDialogue = [
     },
 
     {
-        name: null,
+        name: "...",
         dialogue: "* You look about yourself to determine if anyone is within earshot. *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* You turn back to look at her, and with a heavy sigh, you speak again. *"
     },
     {
@@ -73,12 +73,12 @@ const MitreSquareDialogue = [
     },
 
     {
-        name: null,
+        name: "...",
         dialogue: "* You can see she is clearly uneasy *"
     },
 
     {
-        name: null,
+        name: "...",
         dialogue: "* You place your hand on her shoulder to comfort her *"
     },
     {
@@ -99,28 +99,28 @@ const MitreSquareDialogue = [
         dialogue: "Be safe Madame"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* She departs looking less concerned then she had prior. However, you turn back to the body with renewed indignation."
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* One way or another this will end. At that moment, that is when you notice something on the ground. *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* You make your way over, and discover {item 1}. *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* It seemed out of place among the miscellanious items that littered the alley. *"
     },
 
     {
-        name: null,
+        name: "...",
         dialogue: "* If this was evidence from the crime, a question arises: *"
     },
     {
-        name: null,
+        name: "...",
         dialogue: "* Did it belong to the victim... or the suspect...? *"
     },
     {
@@ -133,11 +133,11 @@ const MitreSquareDialogue = [
 const MitreSquare = () => {
 
     return (
-        <div>
+        <div className="text-white">
             <img id="mitreBG" src="assets/images/locations/mitre-square.png"></img>
             <h1>
                 <TypingWithSound
-                    arr={MitreSquareDialogue.dialogue}
+                    arr={MitreSquareDialogue}
                 />
             </h1>
         </div>

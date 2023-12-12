@@ -9,11 +9,11 @@ const TypingWithSound = (props) => {
   const [speaker, setSpeaker] = useState(props.arr[0].name);
   
   // function handles all dialogue passed in for the current location\
+  const handleTextbox = () => {
   const handleNameChange = () => {
     console.log("name set");
     if(count < props.arr.length){
       setSpeaker(props.arr[count].name)
-      handleDialogueChange();
     }
   }
 
@@ -24,6 +24,9 @@ const TypingWithSound = (props) => {
       setCount(count+1)
     }
   }
+  handleNameChange();
+  handleDialogueChange();
+}
   
 
     useEffect(() => {
@@ -58,8 +61,10 @@ const TypingWithSound = (props) => {
     // return dialogue box, switches through passed in dialogue array
     return (
         <div>
-          <div>{speaker}</div>
-          <div id="typed" onClick={handleNameChange}></div>
+          <div className="dialogueBox">
+          <div id="speakingChar">{speaker}</div>
+          <div id="typed" onClick={handleTextbox}></div>
+          </div>
         </div>
       );
     };
