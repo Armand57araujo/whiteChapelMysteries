@@ -95,3 +95,6 @@ export const REMOVE_SAVE = gql`
     }
 
 `;
+
+export const SET_CURRENT = gql`
+    mutation setCurrentSave()`

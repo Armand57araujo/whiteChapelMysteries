@@ -35,6 +35,7 @@ const typeDefs = `
     addItem(saveId: ID!): Save
     removeSave(saveId: ID!): User
     login(email: String!, password: String!): Auth
+    setCurrentSave(arrLocation: Int): Save
   }
 `;
 
