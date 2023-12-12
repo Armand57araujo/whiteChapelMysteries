@@ -73,6 +73,35 @@
   font-size: 20px; 
 }
 
+.savescreenImage{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 32%;
+  transform: translate(-50%);
+  width: 65%;
+  height: 100%;
+}
+.savescreenbanner{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 689px;
+  background-color: grey;
+  position: absolute;
+  right: 0;
+  top:0; 
+  border: 50px solid black;
+}
+.saveborder{
+  width: 500px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+
+
+
 /* added by ian sills chadwick bartholemuel sampsonite the third */
 /*Noice */
 
