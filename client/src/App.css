@@ -14,6 +14,7 @@
 }
 
 #notepad-inner {
+  position: relative;
   resize: none;
   background: transparent;
   border: none;
@@ -23,13 +24,16 @@
   margin-left: 25px;
   height: 490px;
   width: 360px;
+  z-index: 4;
 }
 
 #notepad-outer {
+  position: relative;
   background-image: url('assets/images/notepad/notepad.jpg');
   background-repeat: no-repeat;
   height: 580px;
   width: 394px;
+  z-index: 4;
 }
 
 .homeBanner{

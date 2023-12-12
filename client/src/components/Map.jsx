@@ -1,10 +1,6 @@
 let currentInventory = ['item1','item2','item3','item4','item5','item6']
 
-
-
 const Map = (props) => {
-
-    const dutfield = "<-- Dutfield Yard"
     
     return(
         <div>
@@ -14,7 +10,7 @@ const Map = (props) => {
         {/* takes in visibility prop to "hide" page when clicking office button */}
         <button id="officeBtn" onClick={props.visibility}>Back To Office</button>
 
-        {/* allows for map button visibility based on the items in the current ineventory */}
+        {/* allows for map button visibility based on the items in the current inventory */}
         {currentInventory.length === 1 ? 
         <button className="mitreSquareBtn"> Mitre Square </button>
         : null}
@@ -28,14 +24,14 @@ const Map = (props) => {
         <div> 
         <button className="mitreSquareBtn"> Mitre Square </button> 
         <button className="druwardStBtn"> Druward Street </button>
-        <button className="dutfieldYardBtn"> {dutfield} </button> 
+        <button className="dutfieldYardBtn"> {"<-- Dutfield Yard"} </button> 
         </div> 
         : null}
         {currentInventory.length === 4 ? 
         <div> 
         <button className="mitreSquareBtn"> Mitre Square </button> 
         <button className="druwardStBtn"> Druward Street </button>
-        <button className="dutfieldYardBtn"> {dutfield}</button>
+        <button className="dutfieldYardBtn"> {"<-- Dutfield Yard"}</button>
         <button className="hanburyStBtn"> Hanbury Street </button> 
         </div> 
         : null}
@@ -43,18 +39,18 @@ const Map = (props) => {
         <div> 
         <button className="mitreSquareBtn"> Mitre Square </button> 
         <button className="druwardStBtn"> Druward Street </button>
-        <button className="dutfieldYardBtn">{dutfield} </button>
+        <button className="dutfieldYardBtn">{"<-- Dutfield Yard"} </button>
         <button className="hanburyStBtn"> Hanbury Street </button>
-        <button className="wharfBtn"> Wharf --> </button> 
+        <button className="wharfBtn"> {"Wharf -->"} </button> 
         </div> 
         : null}
         {currentInventory.length === 6 ? 
         <div> 
         <button className="mitreSquareBtn"> Mitre Square </button> 
         <button className="druwardStBtn"> Druward Street </button>
-        <button className="dutfieldYardBtn">{dutfield} </button>
+        <button className="dutfieldYardBtn">{"<-- Dutfield Yard"} </button>
         <button className="hanburyStBtn"> Hanbury Street </button>
-        <button className="wharfBtn"> Wharf --> </button> 
+        <button className="wharfBtn"> {"Wharf -->"} </button> 
         <button className="dorsetStBtn">Dorset Street </button>
         </div> 
         : null}
