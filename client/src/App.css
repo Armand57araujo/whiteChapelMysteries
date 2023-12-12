@@ -72,10 +72,10 @@ textarea {
   border: 50px solid black;
 }
 .saveborder{
-  border-bottom: 7px solid black;
+  border-bottom: 5px solid black;
   border-radius: 5px; 
   width: 500px;
-  display: flex;
+  margin-bottom: 20px;
   justify-content: center;
 }
 
