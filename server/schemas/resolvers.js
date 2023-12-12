@@ -39,10 +39,21 @@ const resolvers = {
     },
     addUser: async (parent, { email, password }) => {
       const user = await User.create({ email, password});
-
       if(!user) {
         throw AuthenticationError;
       }
+      const save = await Save.create({});
+      await User.findOneAndUpdate(
+        { _id: user._id },
+        { $addToSet: { saves: save }},
+        { new: true }
+      );
+
+      await  User.findOneAndUpdate(
+        {_id: user._id},
+        { currentSave: save._id},
+        { new: true }
+      )
 
       const token = signToken(user);
 
@@ -62,9 +73,11 @@ const resolvers = {
       throw AuthenticationError;
     },
     updateSave: async (parent, args, context) => {
+      console.log('user', context.user);
+      console.log('args', args);
       if(context.user) {
         const save = await Save.findOneAndUpdate(
-          {_id: args._id },
+          {_id: context.user.currentSave},
           { notes: args.notes, inventory: args.inventory},
           { new: true });
       }
@@ -89,6 +102,21 @@ const resolvers = {
           throw AuthenticationError;
         }
         
+        return save;
+      }
+    }
+    ,
+    setCurrentSave: async(parent, args, context) => {
+      if(context.user) {
+        const save = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { currentSave: context.user.saves[args]._id },
+          { new: true });
+
+        if(!save) {
+          throw AuthenticationError;
+        }
+
         return save;
       }
     }
