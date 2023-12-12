@@ -15,7 +15,7 @@ return(
         <div className="homeBanner">
             <div className="center">
                 <div>
-                    <h1 className="">Menu:</h1>
+                    <h1>Menu:</h1>
                 </div>
                 <div>
                     <LoginLogout />
