@@ -4,7 +4,7 @@ import { Howl } from 'howler';
 
 const TypingWithSound = (props) => {
 
-  const [count, setCount] = useState(0);
+  let [count, setCount] = useState(0);
   const [dialogue, setDialogue] = useState(props.arr[0].dialogue);
   const [speaker, setSpeaker] = useState(props.arr[0].name);
   
@@ -14,6 +14,8 @@ const TypingWithSound = (props) => {
     console.log("name set");
     if(count < props.arr.length){
       setSpeaker(props.arr[count].name)
+    } else if(count = props.arr.length){
+      window.location.replace("/office");
     }
   }
 
@@ -22,6 +24,8 @@ const TypingWithSound = (props) => {
     if(count < props.arr.length){
       setDialogue(props.arr[count].dialogue)
       setCount(count+1)
+    }else if(count = props.arr.length){
+      window.location.replace("/office");
     }
   }
   handleNameChange();
