@@ -17,7 +17,7 @@ const addSave = (event) => {
 }
     return (
         <div>
-            <img src="./assets/images/menu/savepageimage.jpg" className="savescreenImage"></img>
+            <img src="./assets/images/menu/scarychild.png" className="savescreenImage"></img>
             <div className="savescreenbanner ">
                 <div>
                     <div>

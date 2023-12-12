@@ -94,8 +94,6 @@
   border: 50px solid black;
 }
 .saveborder{
-  border-bottom: 5px solid black;
-  border-radius: 5px; 
   width: 500px;
   margin-top: 20px;
   justify-content: center;
