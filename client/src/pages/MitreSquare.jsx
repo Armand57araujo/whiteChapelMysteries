@@ -2,7 +2,6 @@ import TypingWithSound from '/src/components/TypingWithSound.jsx'
 
 // pass in an array of dialogue for the typing with sound component
 // const MitreSquareDialogue = ['another victim...','this scene is horrifying','its a god damn arms race']
-<<<<<<< HEAD
 
 const MitreSquareDialogue = [
     {
@@ -128,23 +127,6 @@ const MitreSquareDialogue = [
         dialogue: "I should get back to my office, and take a look at everything we have so far."
     },
 ]
-
-=======
-const MitreSquareDialogue = [
-    {
-        name: "MC",
-        dialogue: "another victim..."
-    },
-    {
-        name: "char2",
-        dialogue: "this scene is horrifying"
-    },
-    {
-        name: "char3",
-        dialogue: "its a god damn arms race"
-    }
-]
->>>>>>> 5f6207a0000c18a6efe24f09be8f598dee54680a
 
 const MitreSquare = () => {
 
