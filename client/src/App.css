@@ -13,8 +13,31 @@
   background-color: red;
 }
 
-textarea {
+#notepad-inner {
+  position: absolute;
   resize: none;
+  background: transparent;
+  border: none;
+  color: black;
+  outline: none;
+  margin-top: 50px;
+  margin-left: 25px;
+  height: 490px;
+  width: 360px;
+  z-index: 4;
+}
+
+#notepad-outer {
+  position: absolute;
+  background-image: url('assets/images/notepad/notepad.jpg');
+  background-repeat: no-repeat;
+  margin-top: -450px;
+  margin-left: 740px;
+  height: 580px;
+  width: 394px;
+  z-index: 4;
+  transition: ease-in;
+  transition-duration: 2s;
 }
 
 .homeBanner{
@@ -65,7 +88,6 @@ textarea {
   height: 100%;
   width: 689px;
   background-color: grey;
-  margin-right:px ;
   position: absolute;
   right: 0;
   top:0; 
@@ -75,7 +97,7 @@ textarea {
   border-bottom: 5px solid black;
   border-radius: 5px; 
   width: 500px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   justify-content: center;
 }
 
@@ -84,9 +106,6 @@ textarea {
 
 /* added by ian sills chadwick bartholemuel sampsonite the third */
 /*Noice */
-
-.pixelated
-
 
 
 

@@ -1,8 +1,25 @@
+import TypingWithSound from '/src/components/TypingWithSound.jsx'
+
+const DruwardDialogue = [
+    {
+        name: "MC",
+        dialogue: "test",
+    },
+    {
+        name: "...",
+        dialogue: "*environmental text*",
+    }
+]
+
+
 const DruwardStreet = () => {
     return(
-        <div>
+        <div className="text-white">
+            <img id="druwardBG" src="assets/images/locations/druward-street.png"></img>
             <h1>
-                DruwardStreet
+            <TypingWithSound
+                arr={DruwardDialogue}
+            />
             </h1>
         </div>
     )

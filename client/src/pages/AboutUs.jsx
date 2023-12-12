@@ -13,12 +13,17 @@ const AboutUs = () => {
             <p>
                 White Chapel Mysteries is a game brought to you by the brilliant minds of:
             </p>
-            <div className="row">
+            <div className="text-white row">
                 <div className="col">
                 <img src="assets/images/avatars/Alonso.jpg"/>
                 <p>
                 Alonso Ampuero
                 </p>
+                <ul className="contactList">
+                    <li><a href="https://github.com">github</a></li>
+                    <li><a href="https://linkedIn.com">linkedIn</a></li>
+                    <li><a href="https://email.com">email</a></li>
+                </ul>
                 <div>
                 </div>
                 </div>
@@ -27,26 +32,46 @@ const AboutUs = () => {
                 <p>
                 Armand Araujo
                 </p>
+                <ul className="contactList">
+                    <li><a href="https://github.com">github</a></li>
+                    <li><a href="https://linkedIn.com">linkedIn</a></li>
+                    <li><a href="https://email.com">email</a></li>
+                </ul>
                 </div>
                 <div className="col">
                 <img src="assets/images/avatars/Ian.jpg"/>
                 <p>    
                 Ian Sills                    
                 </p>
+                <ul className="contactList">
+                    <li><a href="https://github.com">github</a></li>
+                    <li><a href="https://linkedIn.com">linkedIn</a></li>
+                    <li><a href="https://email.com">email</a></li>
+                </ul>
                 </div>
                 </div>
-                <div className='row'>
+                <div className='text-white row'>
                 <div className="col">
                 <img src="assets/images/avatars/Jack.jpg"/>
                 <p>
                 Jack Lunchick-Seymour
                 </p>
+                <ul className="contactList">
+                    <li><a href="https://github.com">github</a></li>
+                    <li><a href="https://linkedIn.com">linkedIn</a></li>
+                    <li><a href="https://email.com">email</a></li>
+                </ul>
                 </div>
                 <div className="col">
                 <img src="assets/images/avatars/Tayla.jpg"/>
                 <p>
                 Tayla Rios
                 </p>
+                <ul className="contactList">
+                    <li><a href="https://github.com">github</a></li>
+                    <li><a href="https://linkedIn.com">linkedIn</a></li>
+                    <li><a href="https://email.com">email</a></li>
+                </ul>
                 </div>
             </div>
         </div>

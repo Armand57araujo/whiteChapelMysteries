@@ -4,7 +4,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,6 +26,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424;
 
 }
 
@@ -69,6 +69,54 @@ body {
   z-index: 3;
 }
 
+#mitreBG{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#druwardBG{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#dutfieldBG{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#hanburyBG{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#dorsetBG{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#wharfBG{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .mitreSquareBtn{
   position: absolute;
   z-index: 4;
@@ -108,6 +156,37 @@ body {
   z-index: 4;
   top: 280px;
   right: 28%;
+}
+
+.contactList{
+  position: relative;
+  width: 5%;
+  left: 75%;
+  bottom: 300px
+}
+
+.dialogueBox{
+  position: absolute;
+  background-color: #1a1a1a7a;
+  text-align: center;
+  border-radius: 10px;
+  bottom:20px;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 4;
+}
+
+#speakingChar {
+  position: relative;
+  font-size: 32px;
+  left: 5%;
+  margin: 2px;
+  padding: 10px;
+  bottom: 30px;
+  width: 300px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
 }
 
 #mapBtn{

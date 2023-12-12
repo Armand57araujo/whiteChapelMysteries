@@ -7,8 +7,8 @@ import Index from './pages/index.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
-import Save from './pages/SavePage.jsx'
-import Office from './pages/office.jsx'
+import Saves from './pages/SavePage.jsx'
+import Office from './pages/Office.jsx'
 import MitreSquare from './pages/MitreSquare.jsx'
 import DruwardStreet from './pages/DruwardStreet.jsx'
 import HanburyStreet from './pages/HanburyStreet.jsx'
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <Signup />
       },{
         path: '/saves',
-        element: <Save />
+        element: <Saves />
       },{
         path: '/office',
         element: <Office />

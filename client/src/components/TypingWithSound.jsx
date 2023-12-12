@@ -4,24 +4,57 @@ import { Howl } from 'howler';
 
 const TypingWithSound = (props) => {
 
-  const [count, setCount] = useState(0);
-  const [dialogue, setDialogue] = useState(props.arr[0]);
+  let [count, setCount] = useState(0);
+  let [itemArr, setItemArr] = useState([]);
+  let itemCount = 0;
+  // pass in location dialogue info
+  const [dialogue, setDialogue] = useState(props.arr[0].dialogue);
+  const [speaker, setSpeaker] = useState(props.arr[0].name);
   
-  // function handles all dialogue passed in for the current location
+  // function handles all dialogue passed in for the current location\
+  const handleTextbox = () => {
+  
+  // depending on the amount of dialogue passed in display correct character speaking
+  const handleNameChange = () => {
+    
+    console.log("name set");
+    if(count < props.arr.length){
+      setSpeaker(props.arr[count].name)
+    } else if(count = props.arr.length){
+      // when we've reached the end of however long the passed in dialogue array is then we head back to the office space.
+    
+      // using state for item array is current replacement for passing item array from db
+      let tempArr = itemArr;
+      itemCount++;
+      tempArr.push(`item ${itemCount}`)
+      setItemArr(tempArr);
+      
+      console.log([...tempArr]);
+      window.location.replace("/office");
+    }
+  }
+
+  // depending on the amount of dialogue passed in display correct dialogue text for the character speaking
   const handleDialogueChange = () => {
     console.log("you clicked!")
     if(count < props.arr.length){
-      setDialogue(props.arr[count])
+      setDialogue(props.arr[count].dialogue)
       setCount(count+1)
     }
   }
+
+  // on click slide over to the next set of dialogue
+  handleNameChange();
+  handleDialogueChange();
+}
+  
 
     useEffect(() => {
         const text = dialogue;
 
         // Sound setup using Howler.js
         const typingSound = new Howl({
-            src: ['assets/sounds/typewriter.ogg'],  // Replace with your audio file path
+          src: ['assets/sounds/typewriter.ogg'],  // Replace with your audio file path
         });
 
         // Create a new instance of Typed.js
@@ -48,7 +81,10 @@ const TypingWithSound = (props) => {
     // return dialogue box, switches through passed in dialogue array
     return (
         <div>
-          <div id="typed" onClick={handleDialogueChange}></div>
+          <div className="dialogueBox">
+          <div id="speakingChar">{speaker}</div>
+          <div id="typed" onClick={handleTextbox}></div>
+          </div>
         </div>
       );
     };

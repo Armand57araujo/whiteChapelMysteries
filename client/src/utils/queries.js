@@ -4,8 +4,11 @@ export const QUERY_SAVE = gql`
     query Save {
         save {
             _id
-            email
-            currentSave
+            notes
+            inventory {
+                itemName
+                description
+            }
         }
     }
 `;
