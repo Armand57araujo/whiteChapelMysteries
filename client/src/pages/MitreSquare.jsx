@@ -21,6 +21,7 @@ const MitreSquare = () => {
 
     return(
         <div>
+            <img id="mitreBG" src="assets/images/locations/mitre-square.png"></img>
             <h1>
                 <TypingWithSound 
                 arr = {MitreSquareDialogue}
