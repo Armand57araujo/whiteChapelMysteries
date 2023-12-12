@@ -19,7 +19,7 @@ const Office = () => {
             {mapVisible ? <Map visibility={() => setMapVisible(!mapVisible)}/> : null}
 
             <button id="notesBtn" onClick={()=> setNotesVisible(!notesVisible)}>
-                Notes
+            {notesVisible ? "Close": null}   Notes
             </button>
             {notesVisible ? <Notepad visibility={() => setNotesVisible(!notesVisible)}/> : null}
             
