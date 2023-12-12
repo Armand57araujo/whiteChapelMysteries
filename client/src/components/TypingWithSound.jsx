@@ -4,19 +4,37 @@ import { Howl } from 'howler';
 
 const TypingWithSound = (props) => {
 
-  const [count, setCount] = useState(0);
+  let [count, setCount] = useState(0);
+  let [itemArr, setItemArr] = useState([]);
+  let itemCount = 0;
+  // pass in location dialogue info
   const [dialogue, setDialogue] = useState(props.arr[0].dialogue);
   const [speaker, setSpeaker] = useState(props.arr[0].name);
   
   // function handles all dialogue passed in for the current location\
   const handleTextbox = () => {
+  
+  // depending on the amount of dialogue passed in display correct character speaking
   const handleNameChange = () => {
+    
     console.log("name set");
     if(count < props.arr.length){
       setSpeaker(props.arr[count].name)
+    } else if(count = props.arr.length){
+      // when we've reached the end of however long the passed in dialogue array is then we head back to the office space.
+    
+      // using state for item array is current replacement for passing item array from db
+      let tempArr = itemArr;
+      itemCount++;
+      tempArr.push(`item ${itemCount}`)
+      setItemArr(tempArr);
+      
+      console.log([...tempArr]);
+      window.location.replace("/office");
     }
   }
 
+  // depending on the amount of dialogue passed in display correct dialogue text for the character speaking
   const handleDialogueChange = () => {
     console.log("you clicked!")
     if(count < props.arr.length){
@@ -24,6 +42,8 @@ const TypingWithSound = (props) => {
       setCount(count+1)
     }
   }
+
+  // on click slide over to the next set of dialogue
   handleNameChange();
   handleDialogueChange();
 }
