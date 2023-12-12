@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import ButtonList from "../components/savebtnlist";
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,10 +22,12 @@ const addSave = (event) => {
                 <div>
                     <div>
                         <div>
-                           <button onClick={addSave} className="saveborder">Save Game</button> 
+                           <button onClick={addSave} className="saveborder">Create New Save</button> 
                         </div>
                         <div>
+                            <Link to="/office">
                             <ButtonList data={dataArray} />
+                            </Link>
                         </div>
                     </div>
                 </div>
