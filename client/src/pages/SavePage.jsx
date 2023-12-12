@@ -1,7 +1,21 @@
-const dataArray = ['item1', 'item2', 'item3', 'item4', 'item5']
+import React, {useState} from "react";
 import ButtonList from "../components/savebtnlist";
 
+
+
+
 const Save = () => {
+    const firstdataArray = [];
+const [dataArray, setDataArray] = useState(firstdataArray);
+const addSave = (event) => {
+    event.preventDefault()
+    if(dataArray.length <= 6){
+    let count = dataArray.length;
+    count++
+    setDataArray([...dataArray, `save ${count}`])
+    }
+     
+}
     return (
         <div>
             <img src="./assets/images/menu/savepageimage.jpg" className="savescreenImage"></img>
@@ -9,7 +23,7 @@ const Save = () => {
                 <div>
                     <div>
                         <div>
-                            <h1 className="saveborder">Save Game</h1>
+                           <button onClick={addSave} className="saveborder">Save Game</button> 
                         </div>
                         <div>
                             <ButtonList data={dataArray} />
@@ -22,3 +36,11 @@ const Save = () => {
 };
 
                 export default Save;
+                
+                
+                
+                // const newArray = dataArray.map((item, index) => {
+      
+    // });
+    // return <ButtonList>newbutton</ButtonList>
+    //  setDataArray([...newArray])
