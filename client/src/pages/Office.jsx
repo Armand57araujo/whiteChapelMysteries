@@ -7,7 +7,7 @@ import Notepad from '../components/Notepad';
 const Office = () => {
     const [mapVisible, setMapVisible] = useState(false);
     const [inventoryVisible, setInventoryVisible] = useState(false);
-    const [notesVisible, setNotesVisible] = useState(false)
+    const [notesVisible, setNotesVisible] = useState(false);
 
     return(
         <div>
