@@ -7,7 +7,7 @@ import Notepad from '../components/Notepad';
 const Office = () => {
     const [mapVisible, setMapVisible] = useState(false);
     const [inventoryVisible, setInventoryVisible] = useState(false);
-    const [notesVisible, setNotesVisible] = useState(false)
+    const [notesVisible, setNotesVisible] = useState(false);
 
     return(
         <div>
@@ -19,7 +19,7 @@ const Office = () => {
             {mapVisible ? <Map visibility={() => setMapVisible(!mapVisible)}/> : null}
 
             <button id="notesBtn" onClick={()=> setNotesVisible(!notesVisible)}>
-                Notes
+            {notesVisible ? "Close": null}   Notes
             </button>
             {notesVisible ? <Notepad visibility={() => setNotesVisible(!notesVisible)}/> : null}
             
