@@ -1,4 +1,5 @@
 :root {
+  user-select: none;
   line-height: 1.5;
   font-weight: 400;
 
@@ -241,6 +242,38 @@ body {
 
 #backBtn:hover {
   border: 1px solid blue;
+}
+
+#chapter1{
+  font-size: 150px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+#text1{
+  position: relative;
+  top: 25%;
+}
+
+#hideBG{
+  font-size: 150px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 3.5s, z-index 3.5s;
+  opacity: 0;
+}
+#hideText{
+  position: relative;
+  top: 25%;
+  transition: opacity 1s;
+  opacity: 0;
 }
 
 h1 {

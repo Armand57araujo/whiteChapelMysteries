@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
@@ -86,12 +87,14 @@ const SignupForm = () => {
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
+        <Link to="/mitresquare">
         <Button
           disabled={!(userFormData.email && userFormData.password)}
           type='submit'
           variant='success'>
           Submit
           </Button>
+          </Link>
       </Form>
     </>
   )

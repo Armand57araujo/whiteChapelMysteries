@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import ButtonList from "../components/savebtnlist";
 import { Link } from 'react-router-dom';
 
-
-
+// create new save, and button data for each save
 const Save = () => {
     const firstdataArray = [];
 const [dataArray, setDataArray] = useState(firstdataArray);
