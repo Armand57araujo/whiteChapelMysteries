@@ -62,6 +62,8 @@ const resolvers = {
       throw AuthenticationError;
     },
     updateSave: async (parent, args, context) => {
+      console.log('user', context.user);
+      console.log('args', args);
       if(context.user) {
         const save = await Save.findOneAndUpdate(
           {_id: args._id },

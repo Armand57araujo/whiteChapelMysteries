@@ -56,7 +56,7 @@ export const ADD_SAVE = gql`
 `;
 
 export const UPDATE_SAVE = gql`
-    mutation updateSave($inventory: [Item], $notes: String){
+    mutation updateSave($inventory: [String], $notes: String){
         updateSave(inventory: $inventory, notes: $notes){
         save {
             _id
