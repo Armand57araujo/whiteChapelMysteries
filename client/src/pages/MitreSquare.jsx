@@ -26,7 +26,7 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* Among them you see {Chloe} trying her best to remain calm amidst the chaos *"
+        dialogue: "* Among them you see Chloe trying her best to remain calm amidst the chaos *"
     },
     {
         name: "...",
@@ -34,10 +34,10 @@ const MitreSquareDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "{Chloe}... I'm at a loss, I can hardly bid you good evening under the circumstances"
+        dialogue: "Chloe... I'm at a loss, I can hardly bid you good evening under the circumstances"
     },
     {
-        name: "{Chloe}",
+        name: "Chloe",
         dialogue: "It's him again... isn't it...?"
     },
     {
@@ -46,7 +46,7 @@ const MitreSquareDialogue = [
     },
 
     {
-        name: "{Chloe}",
+        name: "Chloe",
         dialogue: "Your best guess then good sir"
     },
 
@@ -90,7 +90,7 @@ const MitreSquareDialogue = [
     },
     
     {
-        name: "{Chloe}",
+        name: "Chloe",
         dialogue: "Thank you Mac, thank you so much"
     },
     {
