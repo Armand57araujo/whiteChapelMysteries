@@ -1,3 +1,4 @@
+import AutoSave from '../components/AutoSave';
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
 
 const DutfieldDialogue = [
@@ -139,6 +140,7 @@ const DutfieldDialogue = [
 const DutfieldYard = () => {
     return(
         <div className="text-white">
+            <AutoSave />
             <img id="dutfieldBG" src="assets/images/locations/dutfield-yard.png"></img>
             <h1>
             <TypingWithSound

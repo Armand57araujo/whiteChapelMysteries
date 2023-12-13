@@ -147,6 +147,7 @@ const WharfDialogue = [
 const Wharf = () => {
     return(
         <div className="text-white">
+            <AutoSave />
             <img id="wharfBG" src="assets/images/locations/wharf.png"></img>
             <h1>
             <TypingWithSound

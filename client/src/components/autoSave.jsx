@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 //still needs to work
 
-const autoSave = () => {
+const AutoSave = () => {
   console.log('Auth', Auth.getProfile());
   const [updateSave] = useMutation(UPDATE_SAVE);
   
@@ -47,4 +47,4 @@ const autoSave = () => {
   );
 }
 
-export default autoSave;
+export default AutoSave;

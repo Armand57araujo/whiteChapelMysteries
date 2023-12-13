@@ -1,4 +1,5 @@
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
+import AutoSave from '../components/AutoSave';
 
 const DruwardDialogue = [
     {
@@ -126,16 +127,17 @@ const DruwardDialogue = [
 
 
 const DruwardStreet = () => {
-    return(
+    return (
         <div className="text-white">
+            <AutoSave />
             <img id="druwardBG" src="assets/images/locations/druward-street.png"></img>
             <h1>
-            <TypingWithSound
-                arr={DruwardDialogue}
-            />
+                <TypingWithSound
+                    arr={DruwardDialogue}
+                />
             </h1>
         </div>
     )
-    };
-    
-    export default DruwardStreet;
+};
+
+export default DruwardStreet;

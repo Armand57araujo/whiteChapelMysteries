@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {Link} from 'react-router-dom'
 import { GET_ME } from "../utils/queries";
 import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
+import AutoSave from "../components/AutoSave";
 
 
 const Save = () => {
@@ -39,6 +39,7 @@ const Save = () => {
     }
     return (
         <div>
+            <AutoSave />
             <img src="./assets/images/menu/scarychild.png" className="savescreenImage"></img>
             <div className="savescreenbanner ">
                 <div>

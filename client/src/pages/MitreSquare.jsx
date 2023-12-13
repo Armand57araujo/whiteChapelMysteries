@@ -1,3 +1,4 @@
+import AutoSave from '../components/AutoSave';
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
 
 // pass in an array of dialogue for the typing with sound component
@@ -150,6 +151,7 @@ const MitreSquare = () => {
 
     return (
         <div className="text-white">
+            <AutoSave />
             <p onClick={hide} className='text-center' id="chapter1"><span id='text1'>Chapter 1: The Mitre Square Massacre</span></p>
             <img id="mitreBG" src="assets/images/locations/mitre-square.png"></img>
             <h1>

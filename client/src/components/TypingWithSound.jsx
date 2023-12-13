@@ -23,7 +23,7 @@ const TypingWithSound = (props) => {
       setSpeaker(props.arr[count].name)
     } else if(count = props.arr.length){
       // when we've reached the end of however long the passed in dialogue array is then we head back to the office space.
-    
+
       // using state for item array is current replacement for passing item array from db
       let tempArr = itemArr;
       itemCount++;

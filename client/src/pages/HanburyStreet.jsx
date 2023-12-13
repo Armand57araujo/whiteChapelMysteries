@@ -1,3 +1,4 @@
+import AutoSave from '../components/AutoSave';
 import TypingWithSound from '../components/TypingWithSound'
 const HanburyDialogue = [
     {
@@ -205,6 +206,7 @@ const HanburyDialogue = [
 const HanburyStreet = () => {
     return(
         <div className="text-white">
+            <AutoSave />
             <img id="hanburyBG" src="assets/images/locations/hanbury-street.png"></img>
             <h1>
             <TypingWithSound
