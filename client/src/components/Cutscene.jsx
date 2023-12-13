@@ -14,7 +14,8 @@ const Cutscene = () => {
         setCurrentImage(prev => prev + 1);
       } else {
       
+      }
+    }, 3000); // Change the duration as per your requirements
 
-
-
-}
+    return () => clearInterval(interval);
+  }, [currentImage, images.length]);
