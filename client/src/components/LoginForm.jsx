@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
@@ -34,6 +35,7 @@ const LoginForm = () => {
       }
 
       Auth.login(data.login.token);
+      window.location.replace('/saves')
     } catch (err) {
       setShowAlert(true);
     }

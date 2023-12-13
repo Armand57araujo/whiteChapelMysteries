@@ -2,9 +2,12 @@
 import {Link} from 'react-router-dom';
 
 import LoginLogout from "../components/LoginLogoutButton";
+import Auth from '../utils/auth'
+
 
 const Index = () => {
 
+Auth.loggedIn() ? window.location.replace('saves') : null;
 
 return(
     <div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
@@ -44,6 +45,7 @@ const SignupForm = () => {
       });
       console.log('after attempting to add  user')
       Auth.login(data.addUser.token);
+      window.location.replace('/mitresquare')
     } catch (err) {
       console.log(err);
       setShowAlert(true);
@@ -53,6 +55,7 @@ const SignupForm = () => {
       email: '',
       password: ''
     });
+
   }
 
   return (

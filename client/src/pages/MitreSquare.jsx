@@ -1,3 +1,4 @@
+import AutoSave from '../components/AutoSave';
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
 
 // pass in an array of dialogue for the typing with sound component
@@ -130,8 +131,28 @@ const MitreSquareDialogue = [
 
 const MitreSquare = () => {
 
+    const hide = (event) => {
+
+        // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id)
+        // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].id)
+        // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].textContent)
+
+        // unnecessary dom manipulation, coulda used useStates
+
+        if (event.target.id === "text1" || event.target.id === "chapter1"){
+
+            event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id = "hideBG";
+
+            event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].id = "hideText"
+
+            // event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].textContent = null;
+        }
+    }
+
     return (
         <div className="text-white">
+            <AutoSave />
+            <p onClick={hide} className='text-center' id="chapter1"><span id='text1'>Chapter 1: The Mitre Square Massacre</span></p>
             <img id="mitreBG" src="assets/images/locations/mitre-square.png"></img>
             <h1>
                 <TypingWithSound

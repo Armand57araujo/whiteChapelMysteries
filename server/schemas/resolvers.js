@@ -13,7 +13,7 @@ const resolvers = {
     },
     me: async (parent, args, context) => {
       if(context.user) {
-        return await User.findOne({ _id: context.user._id });
+        return await User.findOne({ _id: context.user._id }).populate('saves');
       }
       throw AuthenticationError;
     }
@@ -38,12 +38,23 @@ const resolvers = {
       return { token, user };
     },
     addUser: async (parent, { email, password }) => {
-      const user = await User.create({ email, password});
-
+      let user = await User.create({ email, password});
       if(!user) {
         throw AuthenticationError;
       }
+      const save = await Save.create({});
+      await User.findOneAndUpdate(
+        { _id: user._id },
+        { $addToSet: { saves: save }},
+        { new: true }
+      );
 
+      user = await  User.findOneAndUpdate(
+        {_id: user._id},
+        { currentSave: save._id},
+        { new: true }
+      );
+      console.log('addUser', user);
       const token = signToken(user);
 
       return { token, user };
@@ -61,14 +72,22 @@ const resolvers = {
       }
       throw AuthenticationError;
     },
-    updateSave: async (parent, args, context) => {
+    updateSave: async (parent, {notes, inventory}, context) => {
+      console.log('user', context.user);
+      console.log('notes', notes);
+      console.log('inventory', inventory);
       if(context.user) {
         const save = await Save.findOneAndUpdate(
-          {_id: args._id },
-          { notes: args.notes, inventory: args.inventory},
-          { new: true });
+          {_id: context.user.currentSave},
+          { notes: notes, inventory: inventory},
+          { new: true }
+          );
+        
+        if(!save) {
+          throw AuthenticationError;
+        }
+        return save;
       }
-      throw AuthenticationError;
     },
     addItem: async (parent, args, context) => {
       if(context.user) {
@@ -90,6 +109,23 @@ const resolvers = {
         }
         
         return save;
+      }
+    }
+    ,
+    setCurrentSave: async(parent, args, context) => {
+      if(context.user) {
+        console.log('context user', context.user.saves)
+        const user = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { currentSave: context.user.saves[args] },
+          { new: true });
+
+        if(!user) {
+          throw AuthenticationError;
+        }
+
+        const token = signToken(user);
+        return { token, user };
       }
     }
   }

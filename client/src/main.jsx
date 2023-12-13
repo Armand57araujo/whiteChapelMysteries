@@ -5,8 +5,6 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Index from './pages/index.jsx'
 import AboutUs from './pages/AboutUs.jsx'
-import Login from './pages/Login.jsx'
-import Signup from './pages/Signup.jsx'
 import Saves from './pages/SavePage.jsx'
 import Office from './pages/Office.jsx'
 import MitreSquare from './pages/MitreSquare.jsx'
@@ -29,12 +27,6 @@ const router = createBrowserRouter([
       },{
         path: '/aboutus',
         element: <AboutUs />
-      },{
-        path: '/login',
-        element: <Login />
-      },{
-        path: '/signup',
-        element: <Signup />
       },{
         path: '/saves',
         element: <Saves />
