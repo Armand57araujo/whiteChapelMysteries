@@ -43,6 +43,7 @@ const LoginForm = () => {
       email: '',
       password: ''
     });
+    window.location.replace('/saves')
   };
 
   return (
@@ -76,14 +77,12 @@ const LoginForm = () => {
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
-        <Link to="/saves">
         <Button
           disabled={!(userFormData.email && userFormData.password)}
           type='submit'
           variant='success'>
             Submit
         </Button>
-        </Link>
       </Form>
     </>
   )
