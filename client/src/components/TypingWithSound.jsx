@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import Typed from 'typed.js';
 import { Howl } from 'howler';
+import handleSpeakingSprite from '../utils/spriteHandling';
 
 const TypingWithSound = (props) => {
 
@@ -60,6 +61,7 @@ const TypingWithSound = (props) => {
         // Create a new instance of Typed.js
         const typed = new Typed('#typed', {
             strings: [text],
+            showCursor: false,
             typeSpeed: 50, // Adjust speed as needed
             onStringTyped: function (arrayPos, self) { 
                   // Play sound on each character typed
@@ -82,8 +84,9 @@ const TypingWithSound = (props) => {
     return (
         <div>
           <div className="dialogueBox">
+          <img id="speakingSprite" src={handleSpeakingSprite(speaker)}></img>
           <div id="speakingChar">{speaker}</div>
-          <div id="typed" onClick={handleTextbox}></div>
+          <textarea readonly='readonly' id="typed" rows={4} onClick={handleTextbox}></textarea>
           </div>
         </div>
       );

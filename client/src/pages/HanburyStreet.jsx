@@ -1,4 +1,4 @@
-
+import TypingWithSound from '../components/TypingWithSound'
 const HanburyDialogue = [
     {
         name: "MC",

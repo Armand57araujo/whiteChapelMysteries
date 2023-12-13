@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import ButtonList from "../components/savebtnlist";
+import { Link } from 'react-router-dom';
 
-
-
-
+// create new save, and button data for each save
 const Save = () => {
     const firstdataArray = [];
 const [dataArray, setDataArray] = useState(firstdataArray);
@@ -22,10 +21,12 @@ const addSave = (event) => {
                 <div>
                     <div>
                         <div>
-                           <button onClick={addSave} className="saveborder">Save Game</button> 
+                           <button onClick={addSave} className="saveborder">Create New Save</button> 
                         </div>
                         <div>
+                            <Link to="/office">
                             <ButtonList data={dataArray} />
+                            </Link>
                         </div>
                     </div>
                 </div>
