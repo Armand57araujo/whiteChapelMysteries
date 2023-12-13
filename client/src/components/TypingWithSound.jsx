@@ -55,6 +55,7 @@ const TypingWithSound = (props) => {
 
         // Sound setup using Howler.js
         const typingSound = new Howl({
+          volume: .3,
           src: ['assets/sounds/typewriter.ogg'],  // Replace with your audio file path
         });
 
