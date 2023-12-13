@@ -35,6 +35,7 @@ const LoginForm = () => {
       }
 
       Auth.login(data.login.token);
+      window.location.replace('/saves')
     } catch (err) {
       setShowAlert(true);
     }
@@ -43,7 +44,6 @@ const LoginForm = () => {
       email: '',
       password: ''
     });
-    window.location.replace('/saves')
   };
 
   return (
