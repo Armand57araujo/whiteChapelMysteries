@@ -39,7 +39,6 @@ const Cutscene = () => {
     <div>
       <div id="cutsceneBG"></div>
       <img id="finalCutscene" src={images[currentImage]} alt={`Scene ${currentImage + 1}`} />
-      
     </div>
   );
 };
