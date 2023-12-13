@@ -299,6 +299,25 @@ body {
   bottom: 250px;
 }
 
+#finalCutscene{
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 377%;
+  bottom: -10%;
+  z-index: 5;
+}
+
+#cutsceneBG{
+  position:fixed;
+  background-color: black;
+  height: 377%;
+  width: 143.4%;
+  left: -22%;
+  bottom: -25px;
+  z-index: 4;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
