@@ -45,6 +45,7 @@ const SignupForm = () => {
       });
       console.log('after attempting to add  user')
       Auth.login(data.addUser.token);
+      window.location.replace('/mitresquare')
     } catch (err) {
       console.log(err);
       setShowAlert(true);
@@ -54,6 +55,7 @@ const SignupForm = () => {
       email: '',
       password: ''
     });
+
   }
 
   return (
@@ -87,14 +89,12 @@ const SignupForm = () => {
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
-        <Link to="/mitresquare">
         <Button
           disabled={!(userFormData.email && userFormData.password)}
           type='submit'
           variant='success'>
           Submit
           </Button>
-          </Link>
       </Form>
     </>
   )
