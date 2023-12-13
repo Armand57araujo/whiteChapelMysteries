@@ -3,6 +3,7 @@ import { useState } from "react";
 import Map from "../components/Map";
 import Inventory from '../components/Inventory';
 import Notepad from '../components/Notepad';
+import AutoSave from '../components/autoSave'
 
 const Office = () => {
     const [mapVisible, setMapVisible] = useState(false);
@@ -32,7 +33,8 @@ const Office = () => {
     }
 
     return(
-        <div>
+        <div> 
+            <AutoSave />
             <img className='officeBackground' src='assets/images/office/office1.jpg'/>
 
             <button id="mapBtn" onClick={hideShow}>
@@ -53,6 +55,7 @@ const Office = () => {
             <Link to="/">
             <button id="backBtn">Back</button>
             </Link>
+           
         </div>
     )
     };

@@ -19,7 +19,14 @@ export const GET_ME = gql`
             _id
             email
             currentSave
-            saves
+            saves {
+                _id
+                notes
+                inventory {
+                    itemName
+                    description
+                }
+            }
         }
     }
 `;

@@ -1,19 +1,42 @@
-import React, {useState} from "react";
-import ButtonList from "../components/savebtnlist";
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import {Link} from 'react-router-dom'
+import { GET_ME } from "../utils/queries";
+import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
+import { useMutation, useQuery } from "@apollo/client";
 
-// create new save, and button data for each save
+
 const Save = () => {
-    const firstdataArray = [];
-const [dataArray, setDataArray] = useState(firstdataArray);
-const addSave = (event) => {
-    event.preventDefault()
-    if(dataArray.length <= 6){
-    let count = dataArray.length;
-    count++
-    setDataArray([...dataArray, `save ${count}`])
+    const { loading , data } = useQuery(GET_ME);
+    const [ setCurrent ] = useMutation(SET_CURRENT);
+    const [ savePlus ] = useMutation(ADD_SAVE);
+    const firstdataArray = data?.me.saves || [];
+    console.log(firstdataArray)
+    const [dataArray, setDataArray] = useState(firstdataArray);
+
+    const addSave = (event) => {
+        event.preventDefault()
+        if(firstdataArray.length < 6){
+            let count = firstdataArray.length;
+            count++
+            savePlus();
+            setDataArray([...firstdataArray, `save ${count}`])
+            window.location.replace('/mitresquare')
+        }
     }
-}
+
+    const chooseSave = async (event) => {
+        event.preventDefault();
+        const choice = event.target.getAttribute('data-index')
+        console.log(`Clicked button`, choice);
+        
+        const current = await setCurrent({variables: parseInt(choice)})
+
+        if(!current) {
+            throw new Error('something went wrong!');
+        }
+
+        window.location.replace('/office');
+    }
     return (
         <div>
             <img src="./assets/images/menu/scarychild.png" className="savescreenImage"></img>
@@ -21,12 +44,18 @@ const addSave = (event) => {
                 <div>
                     <div>
                         <div>
-                           <button onClick={addSave} className="saveborder">Create New Save</button> 
+                           <button onClick={addSave} className="saveborder">New Game</button> 
                         </div>
                         <div>
-                            <Link to="/office">
-                            <ButtonList data={dataArray} />
-                            </Link>
+                            {firstdataArray.map((item, index) => {
+                                console.log(item);
+                            
+                                return (
+                                    <button className='margin-top container d-flex align-items-center justify-content-center' data-index={index} key={index} onClick={chooseSave}>
+                                        Save {index+1}<br/>inventory: {item.inventory} <br/> notes: {item.notes}
+                                    </button>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

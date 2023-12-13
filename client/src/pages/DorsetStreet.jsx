@@ -26,6 +26,7 @@ const DorsetStreet = () => {
             </div>
             <Link to="/">
                 <button id="backBtn">Back</button>
+                <AutoSave />
             </Link>
         </>
     )

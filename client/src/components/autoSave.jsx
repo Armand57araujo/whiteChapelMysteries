@@ -1,35 +1,49 @@
 import { useMutation } from "@apollo/client";
 import { UPDATE_SAVE } from "../utils/mutations";
 import Auth from '../utils/auth';
+import { useEffect } from "react";
 
 //still needs to work
 
-
-const autoSave = async () => {
+const autoSave = () => {
   console.log('Auth', Auth.getProfile());
-  const token = Auth.loggedIn() ? Auth.getToken() : null;
   const [updateSave] = useMutation(UPDATE_SAVE);
+  
+  useEffect(() => {
+    saveCurrent();
+  },[]);
 
-  if (!token) {
-    return false;
-  }
+  const saveCurrent = async () => {
 
-  const userProfile = Auth.getProfile().data;
-  try {
-    console.log('userProfile', userProfile);
-    const update = await updateSave({
-      variables: { inventory: localStorage.getItem('inventory') || userProfile.inventory, notes: localStorage.getItem('notes') || userProfile.notes }
-    })
+    const token = Auth.loggedIn() ? Auth.getToken() : null;
 
-    if (!update) {
-      throw new Error('something went wrong!');
+    if (!token) {
+      return false;
     }
 
-  } catch (err) {
-    console.log(err);
-  };
+    const userProfile = Auth.getProfile().data;
+    try {
+      console.log('userProfile', userProfile);
+      const inventory = localStorage.getItem('inventory') || [];
+      console.log('inventory', inventory);
+      const notes = localStorage.getItem('notes') || '';
+      console.log('notes', notes);
+      const update = await updateSave({
+        variables: { inventory: inventory, notes: notes }
+      })
+
+      if (!update) {
+        throw new Error('something went wrong!');
+      }
+
+    } catch (err) {
+      console.log(err);
+    };
+  }
+
+  
   return ( 
-    <></>
+    <><div></div></>
   );
 }
 
