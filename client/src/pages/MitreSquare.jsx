@@ -37,7 +37,7 @@ const MitreSquareDialogue = [
         dialogue: "{woman#1 name}... I'm at a loss, I can hardly bid you good evening under the circumstances"
     },
     {
-        name: "{woman#1 name}",
+        name: "{fisherman}",
         dialogue: "It's him again... isn't it...?"
     },
     {
