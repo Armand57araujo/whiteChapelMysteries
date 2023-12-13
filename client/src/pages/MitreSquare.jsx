@@ -37,7 +37,7 @@ const MitreSquareDialogue = [
         dialogue: "{woman#1 name}... I'm at a loss, I can hardly bid you good evening under the circumstances"
     },
     {
-        name: "{woman#1 name}",
+        name: "{fisherman}",
         dialogue: "It's him again... isn't it...?"
     },
     {
@@ -130,8 +130,27 @@ const MitreSquareDialogue = [
 
 const MitreSquare = () => {
 
+    const hide = (event) => {
+
+        // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id)
+        // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].id)
+        // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].textContent)
+
+        // unnecessary dom manipulation, coulda used useStates
+
+        if (event.target.id === "text1" || event.target.id === "chapter1"){
+
+            event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id = "hideBG";
+
+            event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].id = "hideText"
+
+            // event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].textContent = null;
+        }
+    }
+
     return (
         <div className="text-white">
+            <p onClick={hide} className='text-center' id="chapter1"><span id='text1'>Chapter 1: The Mitre Square Massacre</span></p>
             <img id="mitreBG" src="assets/images/locations/mitre-square.png"></img>
             <h1>
                 <TypingWithSound
