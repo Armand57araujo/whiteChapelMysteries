@@ -16,7 +16,7 @@ const AboutUs = () => {
       src: ['/public/assets/sounds/theNight.mp3'],
       autoplay: true,
       loop: true,
-      volume: 1.5,
+      volume: .4,
     });
 
     // Play the music when the component mounts for the About Us screen
