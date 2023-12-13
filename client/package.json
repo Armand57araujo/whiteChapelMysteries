@@ -16,7 +16,11 @@
     "react": "^18.2.0",
     "react-bootstrap": "2.9.1",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2", 
+    "react-router-dom": "^6.11.2",
+    "howler": "^2.2.4",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
@@ -24,11 +28,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "vite": "^5.0.0",
-    "howler": "^2.2.4",
-    "typed.js": "^2.1.0"
-  },
-  "devDependencies": {
-   
+    "vite": "^5.0.0"
   }
 }
