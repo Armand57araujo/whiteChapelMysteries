@@ -1,5 +1,5 @@
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
-import AutoSave from '../components/autoSave'
+import AutoSave from '../components/AutoSave'
 import { Link } from 'react-router-dom'
 
 

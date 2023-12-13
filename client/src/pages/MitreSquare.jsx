@@ -1,4 +1,4 @@
-import AutoSave from '../components/autoSave';
+import AutoSave from '../components/AutoSave';
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
 
 // pass in an array of dialogue for the typing with sound component
