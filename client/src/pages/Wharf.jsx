@@ -115,7 +115,7 @@ const WharfDialogue = [
     },
     {
         name: "{fisherman}",
-        dialogue: "If this is the course you wish to take… than I have to ask that you study each scene where the victims were murdered… maybe even speak to witnesses again. Find the pieces, and you will find who you are looking for. If you survive… come speak to me again… we will have much to discuss..."
+        dialogue: "If this is the course you wish to take… than I have to ask. If you have not already, study each scene where the victims were murdered… maybe even speak to witnesses again. Find the pieces, and you will find who you are looking for. If you survive… come speak to me again… we will have much to discuss..."
     },
     {
         name: "MC",
