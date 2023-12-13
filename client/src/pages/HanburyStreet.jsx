@@ -1,204 +1,204 @@
 import TypingWithSound from '../components/TypingWithSound'
 const HanburyDialogue = [
     {
-        "name": "...",
-        "dialogue": "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with {woman#2} again regarding the murder nearby.*"
+        name: "...",
+        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with {woman#2} again regarding the murder nearby.*"
     },
     {
-        "name": "...",
-        "dialogue": "*No sooner had you arrived, did {woman#2} arrive to meet you*"
+        name: "...",
+        dialogue: "*No sooner had you arrived, did {woman#2} arrive to meet you*"
     },
     {
-        "name": "MC",
-        "dialogue": "Good evening, Miss {woman#2}."
+        name: "MC",
+        dialogue: "Good evening, Miss {woman#2}."
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "G-Good evenin’ sir"
+        name: "{woman#2}",
+        dialogue: "G-Good evenin’ sir"
     },
     {
-        "name": "...",
-        "dialogue": "*She’s visibly uncomfortable, more-than-likely due to your appearance*"
+        name: "...",
+        dialogue: "*She’s visibly uncomfortable, more-than-likely due to your appearance*"
     },
     {
-        "name": "...",
-        "dialogue": "*Understandable considering the horrific case we are associated*"
+        name: "...",
+        dialogue: "*Understandable considering the horrific case we are associated*"
     },
     {
-        "name": "MC",
-        "dialogue": "It’s been some time, I hope you’ve been well"
+        name: "MC",
+        dialogue: "It’s been some time, I hope you’ve been well"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "Doin’ my best sir… considerin’"
+        name: "{woman#2}",
+        dialogue: "Doin’ my best sir… considerin’"
     },
     {
-        "name": "...",
-        "dialogue": "*You nod understandingly*"
+        name: "...",
+        dialogue: "*You nod understandingly*"
     },
     {
-        "name": "MC",
-        "dialogue": "{woman#2}, I’ve come to ask you more questions about that night… the night when you found…"
+        name: "MC",
+        dialogue: "{woman#2}, I’ve come to ask you more questions about that night… the night when you found…"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "{respective victim}"
+        name: "{woman#2}",
+        dialogue: "{respective victim}"
     },
     {
-        "name": "MC",
-        "dialogue": "Yes…"
+        name: "MC",
+        dialogue: "Yes…"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "….he’s come back…"
+        name: "{woman#2}",
+        dialogue: "….he’s come back…"
     },
     {
-        "name": "MC",
-        "dialogue": "I don’t wish to frighten you madam, when I say I do not believe he ever truly left."
+        name: "MC",
+        dialogue: "I don’t wish to frighten you madam, when I say I do not believe he ever truly left."
     },
     {
-        "name": "MC",
-        "dialogue": "That is why I need to ask you everything I possibly can about that night again."
+        name: "MC",
+        dialogue: "That is why I need to ask you everything I possibly can about that night again."
     },
     {
-        "name": "...",
-        "dialogue": "*She’s deeply troubled by what she remembers. But she musters her resolve and begins*"
+        name: "...",
+        dialogue: "*She’s deeply troubled by what she remembers. But she musters her resolve and begins*"
     },
     {
-        "name": "Miss Cordelia",
-        "dialogue": "Y-yes, sir."
+        name: "Miss Cordelia",
+        dialogue: "Y-yes, sir."
     },
     {
-        "name": "MC",
-        "dialogue": "Thank you, when you’re prepared madam"
+        name: "MC",
+        dialogue: "Thank you, when you’re prepared madam"
     },
     {
-        "name": "...",
-        "dialogue": "*she takes a breath*"
+        name: "...",
+        dialogue: "*she takes a breath*"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "That night… I heard heated voices. A man and a woman… {respective victim}. She’d walked into that alley where they… where I… found her… and the gentleman followed her…"
+        name: "{woman#2}",
+        dialogue: "That night… I heard heated voices. A man and a woman… {respective victim}. She’d walked into that alley where they… where I… found her… and the gentleman followed her…"
     },
     {
-        "name": "MC",
-        "dialogue": "Can you describe him again?"
+        name: "MC",
+        dialogue: "Can you describe him again?"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "Honestly sir he was an common enough lookin’ bloke… just one of those faces…"
+        name: "{woman#2}",
+        dialogue: "Honestly sir he was an common enough lookin’ bloke… just one of those faces…"
     },
     {
-        "name": "MC",
-        "dialogue": "I understand… but any information might help…"
+        name: "MC",
+        dialogue: "I understand… but any information might help…"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "…yes sir. He wasn’t very tall… about average height… light-hair… a slightly wider build"
+        name: "{woman#2}",
+        dialogue: "…yes sir. He wasn’t very tall… about average height… light-hair… a slightly wider build"
     },
     {
-        "name": "MC",
-        "dialogue": "Good good… every detail helps"
+        name: "MC",
+        dialogue: "Good good… every detail helps"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "O-Ok"
+        name: "{woman#2}",
+        dialogue: "O-Ok"
     },
     {
-        "name": "...",
-        "dialogue": "*Visible fear takes hold of her features*"
+        name: "...",
+        dialogue: "*Visible fear takes hold of her features*"
     },
     {
-        "name": "...",
-        "dialogue": "*What came next was horrifying beyond measure*"
+        name: "...",
+        dialogue: "*What came next was horrifying beyond measure*"
     },
     {
-        "name": "MC",
-        "dialogue": "*You place your hand on her shoulder, and give her a reassuring smile*"
+        name: "MC",
+        dialogue: "*You place your hand on her shoulder, and give her a reassuring smile*"
     },
     {
-        "name": "MC",
-        "dialogue": "Take your time"
+        name: "MC",
+        dialogue: "Take your time"
     },
     {
-        "name": "...",
-        "dialogue": "*She nods, then proceeds*"
+        name: "...",
+        dialogue: "*She nods, then proceeds*"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "That’s when… that’s when I heard it… that horrible, sickenin’ sound… like a butcher cleavin’ through game."
+        name: "{woman#2}",
+        dialogue: "That’s when… that’s when I heard it… that horrible, sickenin’ sound… like a butcher cleavin’ through game."
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "The man came runnin’ out… covered in blood, pale as a sheet… fleein’ quickly"
+        name: "{woman#2}",
+        dialogue: "The man came runnin’ out… covered in blood, pale as a sheet… fleein’ quickly"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "I don’t know what took hold of me… but I had to know what happened… what was the sound?… what was all that blood?… was she ok?… my nightmares curse me at night for my curiosity to this day sir"
+        name: "{woman#2}",
+        dialogue: "I don’t know what took hold of me… but I had to know what happened… what was the sound?… what was all that blood?… was she ok?… my nightmares curse me at night for my curiosity to this day sir"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "There she was… bloodied from head to toe… torn open like… like… sir I’d never seen nothin so horrible in all my life"
+        name: "{woman#2}",
+        dialogue: "There she was… bloodied from head to toe… torn open like… like… sir I’d never seen nothin so horrible in all my life"
     },
     {
-        "name": "MC",
-        "dialogue": "I know… believe me madam… I know"
+        name: "MC",
+        dialogue: "I know… believe me madam… I know"
     },
     {
-        "name": "...",
-        "dialogue": "*You pause as you see her trembling, you don’t know what to say…*"
+        name: "...",
+        dialogue: "*You pause as you see her trembling, you don’t know what to say…*"
     },
     {
-        "name": "MC",
-        "dialogue": "My sincerest apologies for having to question you on such an unpleasant matter… I beg your forgiveness in all this… and will leave you in peace"
+        name: "MC",
+        dialogue: "My sincerest apologies for having to question you on such an unpleasant matter… I beg your forgiveness in all this… and will leave you in peace"
     },
     {
-        "name": "...",
-        "dialogue": "*You turn to leave. But that’s when she grabs hold of your arm*"
+        name: "...",
+        dialogue: "*You turn to leave. But that’s when she grabs hold of your arm*"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "I-I… I can’t tell what was real and what is solely of my nightmares invention… what if it was real sir? What if it wasn’t a terror of my mind…"
+        name: "{woman#2}",
+        dialogue: "I-I… I can’t tell what was real and what is solely of my nightmares invention… what if it was real sir? What if it wasn’t a terror of my mind…"
     },
     {
-        "name": "MC",
-        "dialogue": "W-What… what are you— ?"
+        name: "MC",
+        dialogue: "W-What… what are you— ?"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "The figure sir, that night, tall and loomin’ in the darkness… starin’ into me soul. It seemed almost... malformed… like a shadows meldin together in the dark, constantly shiftin."
+        name: "{woman#2}",
+        dialogue: "The figure sir, that night, tall and loomin’ in the darkness… starin’ into me soul. It seemed almost... malformed… like a shadows meldin together in the dark, constantly shiftin."
     },
     {
-        "name": "MC",
-        "dialogue": "I… I understa—"
+        name: "MC",
+        dialogue: "I… I understa—"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "It’s in the shadows! It’S iN ThE shADOwS!! IT’S IN THE SHADOWS!!!"
+        name: "{woman#2}",
+        dialogue: "It’s in the shadows! It’S iN ThE shADOwS!! IT’S IN THE SHADOWS!!!"
     },
     {
-        "name": "MC",
-        "dialogue": "I’m… I’m so sorry… so very sorry…"
+        name: "MC",
+        dialogue: "I’m… I’m so sorry… so very sorry…"
     },
     {
-        "name": "{woman#2}",
-        "dialogue": "Let it end… please make it end…"
+        name: "{woman#2}",
+        dialogue: "Let it end… please make it end…"
     },
     {
-        "name": "...",
-        "dialogue": "*Her pleading words echo to your core, deepening your resolve and determination*"
+        name: "...",
+        dialogue: "*Her pleading words echo to your core, deepening your resolve and determination*"
     },
     {
-        "name": "MC",
-        "dialogue": "I will end this… I *will* find him"
+        name: "MC",
+        dialogue: "I will end this… I *will* find him"
     },
     {
-        "name": "...",
-        "dialogue": "*She found a measure of calm in your words before she bid you farewell*"
+        name: "...",
+        dialogue: "*She found a measure of calm in your words before she bid you farewell*"
     },
     {
-        "name": "...",
-        "dialogue": "*We should return to our office and go over everything we’ve learned so far*"
+        name: "...",
+        dialogue: "*We should return to our office and go over everything we’ve learned so far*"
     }
 ]
 
