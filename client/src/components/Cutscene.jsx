@@ -3,8 +3,23 @@ import React, { useState, useEffect } from 'react';
 const Cutscene = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    '/images/scene1.png',
-    '/images/scene2.png',
+    'assets/images/cutscene/CutsceneImage 1.jpg',
+    'assets/images/cutscene/CutsceneImage 2.jpg',
+    'assets/images/cutscene/CutsceneImage 3.jpg',
+    'assets/images/cutscene/CutsceneImage 4.jpg',
+    'assets/images/cutscene/CutsceneImage 5.jpg',
+    'assets/images/cutscene/CutsceneImage 6.jpg',
+    'assets/images/cutscene/CutsceneImage 7.jpg',
+    'assets/images/cutscene/CutsceneImage 8.jpg',
+    'assets/images/cutscene/CutsceneImage 9.jpg',
+    'assets/images/cutscene/CutsceneImage 10.jpg',
+    'assets/images/cutscene/CutsceneImage 11.jpg',
+    'assets/images/cutscene/CutsceneImage 12.jpg',
+    'assets/images/cutscene/CutsceneImage 13.jpg',
+    'assets/images/cutscene/CutsceneImage 14.jpg',
+    'assets/images/cutscene/CutsceneImage 15.jpg',
+    'assets/images/cutscene/CutsceneImage 16.jpg',
+    'assets/images/cutscene/CutsceneImage 17.PNG',
     // Add more image paths for your cutscene
   ];
   useEffect(() => {
@@ -13,16 +28,18 @@ const Cutscene = () => {
       if (currentImage < images.length - 1) {
         setCurrentImage(prev => prev + 1);
       } else {
-      
+        window.location.replace('/')
       }
-    }, 3000); // Change the duration as per your requirements
+    }, 4000); // Change the duration as per your requirements
 
     return () => clearInterval(interval);
   }, [currentImage, images.length]);
 
   return (
     <div>
-      <img src={images[currentImage]} alt={`Scene ${currentImage + 1}`} />
+      <div id="cutsceneBG"></div>
+      <img id="finalCutscene" src={images[currentImage]} alt={`Scene ${currentImage + 1}`} />
+      
     </div>
   );
 };
