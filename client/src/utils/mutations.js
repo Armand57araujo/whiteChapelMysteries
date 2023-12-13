@@ -42,14 +42,12 @@ export const ADD_USER = gql`
 export const ADD_SAVE = gql`
     mutation addSave{
         addSave{
-            save {
                     _id
                     inventory {
                         itemName
                         description
                     }
                     notes
-            }
         }
     }
 

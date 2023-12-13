@@ -13,7 +13,7 @@ const resolvers = {
     },
     me: async (parent, args, context) => {
       if(context.user) {
-        return await User.findOne({ _id: context.user._id });
+        return await User.findOne({ _id: context.user._id }).populate('saves');
       }
       throw AuthenticationError;
     }
@@ -114,9 +114,10 @@ const resolvers = {
     ,
     setCurrentSave: async(parent, args, context) => {
       if(context.user) {
-        const user = await User.findByIdAndUpdate(
+        console.log('context user', context.user.saves)
+        const user = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { currentSave: context.user.saves[args]._id },
+          { currentSave: context.user.saves[args] },
           { new: true });
 
         if(!user) {
