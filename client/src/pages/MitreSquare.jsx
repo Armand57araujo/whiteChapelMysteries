@@ -1,5 +1,6 @@
 import AutoSave from '../components/AutoSave';
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
+import { useState } from 'react';
 
 // pass in an array of dialogue for the typing with sound component
 // const MitreSquareDialogue = ['another victim...','this scene is horrifying','its a god damn arms race']
@@ -131,6 +132,8 @@ const MitreSquareDialogue = [
 
 const MitreSquare = () => {
 
+    const [hideOpenScene, setHideOpenScene] = useState(['chapter1', 'text1'])
+
     const hide = (event) => {
 
         // console.log(event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id)
@@ -139,20 +142,23 @@ const MitreSquare = () => {
 
         // unnecessary dom manipulation, coulda used useStates
 
-        if (event.target.id === "text1" || event.target.id === "chapter1"){
+        if (hideOpenScene[1] === "text1" || hideOpenScene[0] === "chapter1"){
 
-            event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id = "hideBG";
+            // event.view.parent.document.children[0].children[1].children[0].children[0].children[0].id = "hideBG";
 
-            event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].id = "hideText"
-
+            // event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].id = "hideText"
+            
+            setHideOpenScene(['hideBG', 'hideText'])
             // event.view.parent.document.children[0].children[1].children[0].children[0].children[0].children[0].textContent = null;
         }
+
+        
     }
 
     return (
         <div className="text-white">
             <AutoSave />
-            <p onClick={hide} className='text-center' id="chapter1"><span id='text1'>Chapter 1: The Mitre Square Massacre</span></p>
+            <p onClick={hide} className='text-center' id={hideOpenScene[0]}><span id={hideOpenScene[1]}>Chapter 1: The Mitre Square Massacre</span></p>
             <img id="mitreBG" src="assets/images/locations/mitre-square.png"></img>
             <h1>
                 <TypingWithSound
