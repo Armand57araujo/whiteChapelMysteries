@@ -1,19 +1,31 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ButtonList from "../components/savebtnlist";
-
-
+import { GET_ME } from "../utils/queries";
+import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
+import { useMutation, useQuery } from "@apollo/client";
 
 
 const Save = () => {
-    const firstdataArray = [];
-const [dataArray, setDataArray] = useState(firstdataArray);
-const addSave = (event) => {
-    event.preventDefault()
-    if(dataArray.length <= 6){
-    let count = dataArray.length;
-    count++
-    setDataArray([...dataArray, `save ${count}`])
+    const { loading , data } = useQuery(GET_ME);
+    const [ setCurrent ] = useMutation(SET_CURRENT);
+    const [ savePlus ] = useMutation(ADD_SAVE);
+    const userData = data || {}
+    const firstdataArray = data?.saves || [];
+    const [dataArray, setDataArray] = useState(firstdataArray);
+
+    const addSave = (event) => {
+        event.preventDefault()
+        if(dataArray.length <= 6){
+            let count = dataArray.length;
+            count++
+            savePlus();
+            setDataArray([...dataArray, `save ${count}`])
+        }
     }
+
+    const chooseSave = (event) => {
+        event.preventDefault();
+        const choice = event.target.id;
 }
     return (
         <div>

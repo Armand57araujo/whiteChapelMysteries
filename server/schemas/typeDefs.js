@@ -31,11 +31,11 @@ const typeDefs = `
   type Mutation {
     addUser(email: String!, password: String!): Auth
     addSave: Save
-    updateSave(inventory: String, notes: String): Save
+    updateSave(inventory: [String], notes: String): Save
     addItem(saveId: ID!): Save
     removeSave(saveId: ID!): User
     login(email: String!, password: String!): Auth
-    setCurrentSave(arrLocation: Int): Save
+    setCurrentSave(location: Int): Save
   }
 `;
 
