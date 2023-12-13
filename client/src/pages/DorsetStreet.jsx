@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 
 const DorsetDialogue = [
     {
-        name: "MC",
-        dialogue: "test",
+        name: "...",
+        dialogue: "We arrive at Dorset Street, following the evidence that has led us here",
     },
     {
         name: "...",
-        dialogue: "*environmental text*",
+        dialogue: "*  *",
     }
 ]
 
