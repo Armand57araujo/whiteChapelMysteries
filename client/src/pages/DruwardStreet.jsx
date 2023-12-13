@@ -11,7 +11,7 @@ const DruwardDialogue = [
         dialogue: "*No sooner had you arrived, did Priya arrive to meet you*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Thank you for meeting with me Miss—"
     },
     {
@@ -27,7 +27,7 @@ const DruwardDialogue = [
         dialogue: "*Best keep it brief then*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Understood."
     },
     {
@@ -35,7 +35,7 @@ const DruwardDialogue = [
         dialogue: "You want to know more about that night yeah? What more do you need?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Anything more that you can remember would be beneficial Madam"
     },
     {
@@ -43,7 +43,7 @@ const DruwardDialogue = [
         dialogue: "As I told you lot before, it was late at night I’d just finished for the night when I heard a scream..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "…Except of course… she was in fact murdered in said alley…"
     },
     {
@@ -67,7 +67,7 @@ const DruwardDialogue = [
         dialogue: "Why…?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I beg your pardon madam?"
     },
     {
@@ -75,7 +75,7 @@ const DruwardDialogue = [
         dialogue: "Why is this happening? What kind of a sick, twisted world do we live in, where one deranged person can have you holding your breath from fear..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Believe me madam… I understand"
     },
     {
@@ -87,7 +87,7 @@ const DruwardDialogue = [
         dialogue: "*You smile warmly*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I’ll do my best"
     },
     {
@@ -103,7 +103,7 @@ const DruwardDialogue = [
         dialogue: "One thing that’s bothered me about that night…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "What is that madam?"
     },
     {
