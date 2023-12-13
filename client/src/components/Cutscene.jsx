@@ -19,3 +19,12 @@ const Cutscene = () => {
 
     return () => clearInterval(interval);
   }, [currentImage, images.length]);
+
+  return (
+    <div>
+      <img src={images[currentImage]} alt={`Scene ${currentImage + 1}`} />
+    </div>
+  );
+};
+
+export default Cutscene;
