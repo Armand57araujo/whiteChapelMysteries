@@ -56,7 +56,7 @@ const TypingWithSound = (props) => {
         // Sound setup using Howler.js
         const typingSound = new Howl({
           volume: .3,
-          src: ['assets/sounds/typewriter.ogg'],  // Replace with your audio file path
+          src: ['assets/sounds/typewriter.wav'],  // Replace with your audio file path
         });
 
         // Create a new instance of Typed.js
@@ -87,7 +87,7 @@ const TypingWithSound = (props) => {
           <div className="dialogueBox">
           <img id="speakingSprite" src={handleSpeakingSprite(speaker)}></img>
           <div id="speakingChar">{speaker}</div>
-          <textarea readonly='readonly' id="typed" rows={4} onClick={handleTextbox}></textarea>
+          <textarea readnly='readonly' id="typed" rows={4} onClick={handleTextbox}></textarea>
           </div>
         </div>
       );
