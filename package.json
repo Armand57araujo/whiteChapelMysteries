@@ -17,6 +17,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-  
+    "vite": "^5.0.8"
   }
 }
