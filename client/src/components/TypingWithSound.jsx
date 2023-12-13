@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react';
 import Typed from 'typed.js';
 import { Howl } from 'howler';
 import handleSpeakingSprite from '../utils/spriteHandling';
+import Cutscene from './Cutscene';
 
 const TypingWithSound = (props) => {
 
@@ -11,23 +12,27 @@ const TypingWithSound = (props) => {
   // pass in location dialogue info
   const [dialogue, setDialogue] = useState(props.arr[0].dialogue);
   const [speaker, setSpeaker] = useState(props.arr[0].name);
+  const [enactFinalScene, setEnactFinalScene] = useState(false);
   
   // function handles all dialogue passed in for the current location\
   const handleTextbox = () => {
   
   // depending on the amount of dialogue passed in display correct character speaking
   const handleNameChange = () => {
-    
+    // console.log(window.location.pathname)
     console.log("name set");
     if(count < props.arr.length){
-      setSpeaker(props.arr[count].name)
-    } else if(count = props.arr.length){
+      setSpeaker(props.arr[count].name);
+    }else if(count = props.arr.length && window.location.pathname === "/dorsetstreet"){
+      console.log('final cutscene here');
+      setEnactFinalScene(!enactFinalScene);
+    } else if(count = props.arr.length && window.location.pathname !== "/dorsetstreet"){
       // when we've reached the end of however long the passed in dialogue array is then we head back to the office space.
     
       // using state for item array is current replacement for passing item array from db
       let tempArr = itemArr;
       itemCount++;
-      tempArr.push(`item ${itemCount}`)
+      tempArr.push(`item ${itemCount}`);
       setItemArr(tempArr);
       
       console.log([...tempArr]);
@@ -86,6 +91,7 @@ const TypingWithSound = (props) => {
         <div>
           <div className="dialogueBox">
           <img id="speakingSprite" src={handleSpeakingSprite(speaker)}></img>
+          {enactFinalScene ? <Cutscene></Cutscene> : null}
           <div id="speakingChar">{speaker}</div>
           <textarea readnly='readonly' id="typed" rows={4} onClick={handleTextbox}></textarea>
           </div>

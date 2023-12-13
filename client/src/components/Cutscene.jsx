@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Cutscene = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    '/images/scene1.png',
+    'assets/images/cutscene/theMonster.gif',
     '/images/scene2.png',
     // Add more image paths for your cutscene
   ];
@@ -22,7 +22,7 @@ const Cutscene = () => {
 
   return (
     <div>
-      <img src={images[currentImage]} alt={`Scene ${currentImage + 1}`} />
+      <img id="finalCutscene" src={images[currentImage]} alt={`Scene ${currentImage + 1}`} />
     </div>
   );
 };
