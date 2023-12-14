@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 const DorsetDialogue = [
     {
         name: "...",
-        dialogue: "We arrive at Dorset Street, following the evidence that has led us here",
+        dialogue: "* You arrive at Dorset Street, following the evidence that has led you there *",
     },
     {
         name: "...",
-        dialogue: "* 'If you survive… come speak to me again… we will have much to discuss... ' *",
+        dialogue: "* 'If you survive… come speak to me again… we will have much to discuss... ' the fisherman's words echo through your head. *",
     },
     {
         name: "...",
@@ -18,7 +18,7 @@ const DorsetDialogue = [
     },
     {
         name: "...",
-        dialogue: "* How did this, all connect, and just what was the Fisherman so afraid of?*",
+        dialogue: "* How did this all connect, and just what was the fisherman so afraid of? *",
     },
     {
         name: "...",
@@ -26,11 +26,11 @@ const DorsetDialogue = [
     },
     {
         name: "...",
-        dialogue: "* All the evidence pointed there, so if we want answers, that's where we'll find them. *",
+        dialogue: "* All the evidence pointed there, so if you want answers, that's where you'll find them. *",
     },
     {
         name: "...",
-        dialogue: "* We begin on our way... but no sooner had we begun, are we brought to a halt by the all to familiar sound of a woman crying out in terror.... *",
+        dialogue: "* You begin on your way... but no sooner than you had begun, are you brought to a halt by the all to familiar sound of a woman crying out in terror.... *",
     }
 ]
 
