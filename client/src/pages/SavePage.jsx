@@ -35,7 +35,7 @@ const Save = () => {
         if(!current) {
             throw new Error('something went wrong!');
         }
-
+        
         window.location.replace('/office');
     }
 

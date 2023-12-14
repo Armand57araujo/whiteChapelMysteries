@@ -289,23 +289,30 @@ body {
   color: white;
   text-align: center;
   border-radius: 10px;
-  top: 20px
+  top: 40px;
 }
 
 .inventory-list {
-  position: absolute;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 10px;
-  top: 200px;
   max-width: 70%;
 }
+.border{
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.centerinv{
+  position: relative;
+  top: 120px;
+  margin-top: 25px;
+
+}
+
 
 .inventory-item {
-  position: relative;
-  top: px;
-  left: 100px;
   background-color: #1a1a1a7a;
+  margin-bottom: 15px;
 }
 
 #officeBtn{
@@ -423,3 +430,4 @@ button:focus-visible {
     /* background-color: #f9f9f9; */
   /* }
 } */ 
+
