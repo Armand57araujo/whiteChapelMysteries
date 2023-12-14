@@ -33,7 +33,7 @@ const typeDefs = `
     addSave: Save
     updateSave(inventory: [String], notes: String): Save
     addItem(saveId: ID!): Save
-    removeSave(saveId: ID!): User
+    removeSave(location: Int): Auth
     login(email: String!, password: String!): Auth
     setCurrentSave(location: Int): Auth
   }
