@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GET_ME, QUERY_SAVE } from "../utils/queries";
+import { GET_ME } from "../utils/queries";
 import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
 import AutoSave from "../components/AutoSave";
@@ -35,7 +35,7 @@ const Save = () => {
             throw new Error('something went wrong!');
         }
 
-        window.location.replace('/office');
+        // window.location.replace('/office');
     }
     return (
         <div>

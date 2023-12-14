@@ -3,12 +3,11 @@ import Typed from 'typed.js';
 import { Howl } from 'howler';
 import handleSpeakingSprite from '../utils/spriteHandling';
 import Cutscene from './Cutscene';
+import addItem from '../utils/addItem';
 
 const TypingWithSound = (props) => {
 
   let [count, setCount] = useState(0);
-  let [itemArr, setItemArr] = useState([]);
-  let itemCount = 0;
   // pass in location dialogue info
   const [dialogue, setDialogue] = useState(props.arr[0].dialogue);
   const [speaker, setSpeaker] = useState(props.arr[0].name);
@@ -28,14 +27,8 @@ const TypingWithSound = (props) => {
       setEnactFinalScene(!enactFinalScene);
     } else if(count = props.arr.length && window.location.pathname !== "/dorsetstreet"){
       // when we've reached the end of however long the passed in dialogue array is then we head back to the office space.
-
       // using state for item array is current replacement for passing item array from db
-      let tempArr = itemArr;
-      itemCount++;
-      tempArr.push(`item ${itemCount}`);
-      setItemArr(tempArr);
-      
-      console.log([...tempArr]);
+      addItem();
       window.location.replace("/office");
     }
   }
