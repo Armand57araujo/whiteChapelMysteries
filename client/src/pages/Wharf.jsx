@@ -1,4 +1,5 @@
 import TypingWithSound from '/src/components/TypingWithSound.jsx'
+import AutoSave from '../components/AutoSave';
 
 const WharfDialogue = [
     {
