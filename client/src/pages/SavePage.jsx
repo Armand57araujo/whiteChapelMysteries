@@ -3,6 +3,7 @@ import { GET_ME, QUERY_SAVE } from "../utils/queries";
 import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
 import AutoSave from "../components/AutoSave";
+import Auth from '../utils/auth';
 
 
 const Save = () => {
@@ -37,6 +38,10 @@ const Save = () => {
 
         window.location.replace('/office');
     }
+
+    const handleLogout = () => {
+        Auth.logout(); 
+    };
     return (
         <div>
             <AutoSave />
@@ -46,6 +51,9 @@ const Save = () => {
                     <div>
                         <div>
                            <button onClick={addSave} className="saveborder">New Game</button> 
+                        </div>
+                        <div className="logoutButton">
+                        <button onClick={handleLogout} className="logoutButton">Logout</button>
                         </div>
                         <div>
                             {firstdataArray.map((item, index) => {

@@ -404,6 +404,13 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.logoutButton {
+  
+  position: absolute;
+  bottom: 0;
+  margin-left: 25%;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
