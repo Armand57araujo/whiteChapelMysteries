@@ -3,11 +3,12 @@ import { GET_ME } from "../utils/queries";
 import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
 import AutoSave from "../components/AutoSave";
+import Auth from '../utils/auth';
 
 
 const Save = () => {
     const { loading , data } = useQuery(GET_ME);
-    const [ setCurrent ] = useMutation(SET_CURRENT);
+    const [ setCurrent, {error} ] = useMutation(SET_CURRENT);
     const [ savePlus ] = useMutation(ADD_SAVE);
     const firstdataArray = data?.me.saves || [];
     console.log(firstdataArray)
@@ -25,18 +26,26 @@ const Save = () => {
     }
 
     const chooseSave = async (event) => {
-        event.preventDefault();
-        const choice = event.target.getAttribute('data-index')
+        let choice = parseInt(event.target.getAttribute('data-index'));
         console.log(`Clicked button`, choice);
-        
-        const current = await setCurrent({variables: parseInt(choice)})
+        console.log('typeof', typeof 2);
+
+        const current = await setCurrent({variables: {location: choice}});
 
         if(!current) {
             throw new Error('something went wrong!');
         }
-
+        console.log('current', current);
+        const tempSave = current.data.setCurrentSave.user.saves[choice]
+        localStorage.setItem('notes', tempSave.notes);
+        console.log('inventory', tempSave.inventory);
+        localStorage.setItem('inventory', JSON.stringify(tempSave.inventory))
         window.location.replace('/office');
     }
+
+    const handleLogout = () => {
+        Auth.logout(); 
+    };
     return (
         <div>
             <AutoSave />
@@ -47,13 +56,16 @@ const Save = () => {
                         <div>
                            <button onClick={addSave} className="saveborder">New Game</button> 
                         </div>
+                        <div className="logoutButton">
+                        <button onClick={handleLogout} className="logoutButton">Logout</button>
+                        </div>
                         <div>
                             {firstdataArray.map((item, index) => {
-                                console.log(item);
+                                console.log('item', item);
                             
                                 return (
                                     <button className='margin-top container d-flex align-items-center justify-content-center' data-index={index} key={index} onClick={chooseSave}>
-                                        Save {index+1}<br/>inventory: {item.inventory} <br/> notes: {item.notes}
+                                        Save {index+1}<br/>inventory: {item.inventory.length} item(s) <br/> notes: {item.notes}
                                     </button>
                                 )
                             })}

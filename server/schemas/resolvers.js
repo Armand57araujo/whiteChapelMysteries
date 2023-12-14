@@ -7,7 +7,7 @@ const resolvers = {
       
       if(context.user) {
         const user = await User.findOne({_id:context.user._id})
-        return await Save.findOne({ _id: user.currentSave });
+        return await Save.findOne({ _id: user.currentSave }).populate('inventory');
       }
       throw AuthenticationError;
     },
@@ -77,12 +77,16 @@ const resolvers = {
       console.log('notes', notes);
       console.log('inventory', inventory);
       if(context.user) {
-        const save = await Save.findOneAndUpdate(
+        let save = await Save.findOneAndUpdate(
           {_id: context.user.currentSave},
-          { notes: notes, inventory: inventory},
+          { notes: notes},
           { new: true }
           );
-        
+        save = await Save.findOneAndUpdate(
+          {_id: context.user.currentSave},
+          { inventory: JSON.parse(inventory)},
+          { new: true }
+        )
         if(!save) {
           throw AuthenticationError;
         }
@@ -112,13 +116,15 @@ const resolvers = {
       }
     }
     ,
-    setCurrentSave: async(parent, args, context) => {
+    setCurrentSave: async(parent, {location}, context) => {
       if(context.user) {
         console.log('context user', context.user.saves)
+        console.log('args', location);
+        console.log('context save', context.user.saves[location]);
         const user = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { currentSave: context.user.saves[args] },
-          { new: true });
+          { currentSave: context.user.saves[location] },
+          { new: true }).populate('saves')
 
         if(!user) {
           throw AuthenticationError;
