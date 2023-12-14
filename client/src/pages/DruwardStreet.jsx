@@ -4,18 +4,18 @@ import AutoSave from '../components/AutoSave';
 const DruwardDialogue = [
     {
         name: "...",
-        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with {woman#3} again regarding the murder nearby.*"
+        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with Priya again regarding the murder nearby.*"
     },
     {
         name: "...",
-        dialogue: "*No sooner had you arrived, did {woman#3} arrive to meet you*"
+        dialogue: "*No sooner had you arrived, did Priya arrive to meet you*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Thank you for meeting with me Miss—"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "Got customers to see to, so please kindly get on with it, would ya?"
     },
     {
@@ -27,23 +27,23 @@ const DruwardDialogue = [
         dialogue: "*Best keep it brief then*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Understood."
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "You want to know more about that night yeah? What more do you need?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Anything more that you can remember would be beneficial Madam"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "As I told you lot before, it was late at night I’d just finished for the night when I heard a scream..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "…Except of course… she was in fact murdered in said alley…"
     },
     {
@@ -55,7 +55,7 @@ const DruwardDialogue = [
         dialogue: "*Perhaps it was the first she’d considered that fact. Or more-likely she avoided the idea to assuage her guilt over the matter*"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "Yes… well, them’s the cards as they say…"
     },
     {
@@ -63,23 +63,23 @@ const DruwardDialogue = [
         dialogue: "*Her demeanor was a touch more somber now*"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "Why…?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I beg your pardon madam?"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "Why is this happening? What kind of a sick, twisted world do we live in, where one deranged person can have you holding your breath from fear..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Believe me madam… I understand"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "If you understand, find him… and if at all possible, fill him full of holes when you do"
     },
     {
@@ -87,11 +87,11 @@ const DruwardDialogue = [
         dialogue: "*You smile warmly*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I’ll do my best"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "Right then, enough with all that… best be getting back. You take care of yourself detective"
     },
     {
@@ -99,15 +99,15 @@ const DruwardDialogue = [
         dialogue: "*She begins to walk off, but then stops and turns back*"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "One thing that’s bothered me about that night…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "What is that madam?"
     },
     {
-        name: "{woman#3}",
+        name: "Priya",
         dialogue: "She was running away from someone, which means that at some point they were behind her if they were chasing her..."
     },
     {

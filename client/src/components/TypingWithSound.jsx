@@ -61,7 +61,7 @@ const TypingWithSound = (props) => {
         // Sound setup using Howler.js
         const typingSound = new Howl({
           volume: .3,
-          src: ['/public/assets/sounds/typewriter.wav'],  // Replace with your audio file path
+          src: ['/assets/sounds/typewriter.wav'],  // Replace with your audio file path
         });
 
         // Create a new instance of Typed.js

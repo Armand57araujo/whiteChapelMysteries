@@ -37,18 +37,15 @@ const DorsetDialogue = [
 const DorsetStreet = () => {
 
     return (
-        <>
             <div className="text-white">
+                <AutoSave />
                 <img id="dorsetBG" src="assets/images/locations/dorset-street.png"></img>
+                <h1>
                 <TypingWithSound
                     arr={DorsetDialogue}
                 />
+                </h1>
             </div>
-            <Link to="/">
-                <button id="backBtn">Back</button>
-                <AutoSave />
-            </Link>
-        </>
     )
 };
 

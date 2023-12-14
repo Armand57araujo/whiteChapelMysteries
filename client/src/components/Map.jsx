@@ -5,7 +5,7 @@ let currentInventory = ['item1','item2','item3','item4','item5','item6']
 const Map = (props) => {
     
     return(
-        <div>
+        <div className="text-white">
         <img className="mapBackground" src="assets/images/office/map.jpg"/>
         <h1> Map </h1>
        
