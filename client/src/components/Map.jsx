@@ -13,10 +13,20 @@ const Map = (props) => {
         <button id="officeBtn" onClick={props.visibility}>Back To Office</button>
 
         {/* allows for map button visibility based on the items in the current inventory */}
-        {currentInventory.length === 1 ? 
+        {currentInventory.length < 1 ? 
         <Link to="/mitresquare">
         <button className="mitreSquareBtn"> Mitre Square </button>
         </Link>
+        : null}
+        {currentInventory.length === 1 ? 
+        <div> 
+        <Link to="/mitresquare">
+        <button className="mitreSquareBtn"> Mitre Square </button>
+        </Link>
+        <Link to="/druwardstreet"> 
+        <button className="druwardStBtn"> Druward Street </button> 
+        </Link>
+        </div> 
         : null}
         {currentInventory.length === 2 ? 
         <div> 
@@ -25,6 +35,9 @@ const Map = (props) => {
         </Link>
         <Link to="/druwardstreet"> 
         <button className="druwardStBtn"> Druward Street </button> 
+        </Link>
+        <Link to="/hanburystreet">
+        <button className="hanburyStBtn"> Hanbury Street </button> 
         </Link>
         </div> 
         : null}
@@ -35,6 +48,9 @@ const Map = (props) => {
         </Link>
         <Link to="/druwardstreet"> 
         <button className="druwardStBtn"> Druward Street </button> 
+        </Link>
+        <Link to="/hanburystreet">
+        <button className="hanburyStBtn"> Hanbury Street </button> 
         </Link>
         <Link to="/dutfieldyard">
         <button className="dutfieldYardBtn"> {"<-- Dutfield Yard"} </button> 
@@ -49,11 +65,14 @@ const Map = (props) => {
         <Link to="/druwardstreet"> 
         <button className="druwardStBtn"> Druward Street </button> 
         </Link>
+        <Link to="/hanburystreet">
+        <button className="hanburyStBtn"> Hanbury Street </button> 
+        </Link>
         <Link to="/dutfieldyard">
         <button className="dutfieldYardBtn"> {"<-- Dutfield Yard"} </button> 
         </Link>
-        <Link to="/hanburystreet">
-        <button className="hanburyStBtn"> Hanbury Street </button> 
+        <Link to="/wharf">
+        <button className="wharfBtn"> {"Wharf -->"} </button> 
         </Link>
         </div> 
         : null}
@@ -65,30 +84,11 @@ const Map = (props) => {
         <Link to="/druwardstreet"> 
         <button className="druwardStBtn"> Druward Street </button> 
         </Link>
-        <Link to="/dutfieldyard">
-        <button className="dutfieldYardBtn"> {"<-- Dutfield Yard"} </button> 
-        </Link>
         <Link to="/hanburystreet">
         <button className="hanburyStBtn"> Hanbury Street </button> 
         </Link>
-        <Link to="/wharf">
-        <button className="wharfBtn"> {"Wharf -->"} </button> 
-        </Link>
-        </div> 
-        : null}
-        {currentInventory.length === 6 ? 
-        <div> 
-        <Link to="/mitresquare">
-        <button className="mitreSquareBtn"> Mitre Square </button>
-        </Link>
-        <Link to="/druwardstreet"> 
-        <button className="druwardStBtn"> Druward Street </button> 
-        </Link>
         <Link to="/dutfieldyard">
         <button className="dutfieldYardBtn"> {"<-- Dutfield Yard"} </button> 
-        </Link>
-        <Link to="/hanburystreet">
-        <button className="hanburyStBtn"> Hanbury Street </button> 
         </Link>
         <Link to="/wharf">
         <button className="wharfBtn"> {"Wharf -->"} </button> 
