@@ -106,11 +106,11 @@ button{
 
 .save-btn {
   border-radius: 10px 0px 0px 10px; 
+  height: 93px;
 }
 
 .delete-btn {
-  min-height: 93px;
-  max-height: 94px;
+  height: 93px;
   width: 10%;
   border-radius: 0px 10px 10px 0px;
 }

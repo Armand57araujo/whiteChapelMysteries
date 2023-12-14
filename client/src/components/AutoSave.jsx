@@ -15,12 +15,6 @@ const AutoSave = () => {
 
   const saveCurrent = async () => {
 
-    const token = Auth.loggedIn() ? Auth.getToken() : null;
-
-    if (!token) {
-      return false;
-    }
-
     const userProfile = Auth.getProfile().data;
     try {
       console.log('userProfile front', userProfile);

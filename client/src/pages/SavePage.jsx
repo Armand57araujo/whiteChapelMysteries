@@ -15,13 +15,18 @@ const Save = () => {
     console.log(firstdataArray)
     const [dataArray, setDataArray] = useState(firstdataArray);
 
-    const addSave = (event) => {
+    const addSave = async (event) => {
         event.preventDefault()
         if(firstdataArray.length < 6){
             let count = firstdataArray.length;
             count++
-            savePlus();
+            const newSave = await savePlus();
+            console.log('newSave', newSave);
             setDataArray([...firstdataArray, `save ${count}`])
+            localStorage.setItem('notes', '');
+            let bag = [];
+            localStorage.setItem('inventory', JSON.stringify(bag));
+            Auth.updateToken(newSave.data.addSave.token)
             window.location.replace('/mitresquare')
         }
     }
@@ -29,8 +34,6 @@ const Save = () => {
     const chooseSave = async (event) => {
         event.preventDefault();
         let choice = parseInt(event.target.getAttribute('data-index'));
-        console.log(`Clicked button`, choice);
-        console.log('typeof', typeof 2);
 
         const current = await setCurrent({variables: {location: choice}});
 
@@ -54,7 +57,7 @@ const Save = () => {
     const deleteSave = async (event) => {
         event.preventDefault();
         let choice = parseInt(event.target.getAttribute('data-index'));
-
+        
         const deleted = await removeSave({variables: {location: choice}});
         if(!deleted) {
             throw new Error('something went wrong!');
@@ -75,9 +78,7 @@ const Save = () => {
                         <button onClick={handleLogout} className="logoutButton">Logout</button>
                         </div>
                         <div>
-                            {firstdataArray.map((item, index) => {
-                                console.log('item', item);
-                            
+                            {firstdataArray.map((item, index) => {                            
                                 return (
                                     <div className="btn-group margin-top container d-flex align-items-center justify-content-center" role="group" key={`list-${index}`}>
                                     <button className='container d-flex align-items-center justify-content-center save-btn' data-index={index} key={index} onClick={chooseSave}>

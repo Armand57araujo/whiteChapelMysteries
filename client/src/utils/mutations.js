@@ -42,12 +42,19 @@ export const ADD_USER = gql`
 export const ADD_SAVE = gql`
     mutation addSave{
         addSave{
+            token
+            user {
+                _id
+                saves {
                     _id
                     inventory {
                         itemName
                         description
                     }
                     notes
+                }
+                currentSave
+            }
         }
     }
 
