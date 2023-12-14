@@ -3,8 +3,8 @@ let currentInventory = ['item1','item2','item3','item4','item5']
 const Inventory = (props) => {
 
   
-    // const bag = JSON.parse(localStorage.getItem('inventory')) || [];
-    const bag = [{itemName: 'Scratched Bolt', description: 'A bolt found on Druward Street. It seems to have some scratches on it'},{itemName: 'Cracked Bolt', description: 'A bolt found on Hanbury Street. It appears to have been split in two.'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'}];
+    const bag = JSON.parse(localStorage.getItem('inventory')) || [];
+    // const bag = [{itemName: 'Scratched Bolt', description: 'A bolt found on Druward Street. It seems to have some scratches on it'},{itemName: 'Cracked Bolt', description: 'A bolt found on Hanbury Street. It appears to have been split in two.'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'}];
     
 
     return(

@@ -4,7 +4,7 @@ import AutoSave from '../components/AutoSave';
 const WharfDialogue = [
     {
         name: "...",
-        dialogue: "*You arrive at the Wharf, and begin asking around for Edmonten Xaviar. Eventually you find yourself at his vessel and make your way over. A seafaring gentleman is cleaning his nets when you approach.*"
+        dialogue: "* You arrive at the Wharf, and begin asking around for Edmonten Xaviar. Eventually you find yourself at his vessel and make your way over. A seafaring gentleman is cleaning his nets when you approach. *"
     },
     {
         name: "Mac",
@@ -12,7 +12,7 @@ const WharfDialogue = [
     },
     {
         name: "Edmonten Xaviar",
-        dialogue: "It's Edmonten Xaviar Fredick Chadwick Sr to you! can I help you sir?"
+        dialogue: "It's Edmonten Xaviar Fredick Chadwick Sr. to you! can I help you sir?"
     },
     {
         name: "Mac",
@@ -20,15 +20,15 @@ const WharfDialogue = [
     },
     {
         name: "...",
-        dialogue: "*He is visibly distressed by your presence*"
+        dialogue: "* He is visibly distressed by your presence *"
     },
     {
         name: "...",
-        dialogue: "*Could this be him?*"
+        dialogue: "* Could this be him? *"
     },
     {
         name: "...",
-        dialogue: "*Could he be The Ripper?*"
+        dialogue: "* Could he be The Ripper? *"
     },
     {
         name: "Mac",
@@ -36,7 +36,7 @@ const WharfDialogue = [
     },
     {
         name: "Edmonten Xaviar",
-        dialogue: "T-There… there was nothing to tell or come forward about… I-I…I didn’t see anything… I swear to you sir"
+        dialogue: "T-There… there was nothing to tell or come forward about… I-I…I didn’t see anything… I swear to you sir."
     },
     {
         name: "Mac",
@@ -48,7 +48,7 @@ const WharfDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "You’ll answer me now good sir, while my altruistic mood persists"
+        dialogue: "You’ll answer me now good sir, while my altruistic mood persists!"
     },
     {
         name: "Edmonten Xaviar",
@@ -68,7 +68,7 @@ const WharfDialogue = [
     },
     {
         name: "...",
-        dialogue: "*He turned pale as a sheet*"
+        dialogue: "* He turned pale as a sheet *"
     },
     {
         name: "Mac",
@@ -76,11 +76,11 @@ const WharfDialogue = [
     },
     {
         name: "...",
-        dialogue: "*If possible, he turned paler then ever before*"
+        dialogue: "* If possible, he turned paler than ever before *"
     },
     {
         name: "...",
-        dialogue: "*Your eyes narrow*"
+        dialogue: "* Your eyes narrow *"
     },
     {
         name: "Mac",
@@ -88,7 +88,7 @@ const WharfDialogue = [
     },
     {
         name: "...",
-        dialogue: "*His eyes grow wide with fear at your words*"
+        dialogue: "* His eyes grow wide with fear at your words *"
     },
     {
         name: "Mac",
@@ -104,15 +104,15 @@ const WharfDialogue = [
     },
     {
         name: "...",
-        dialogue: "*At the moment of your explosive outburst, he grabs firm hold of your shoulders*"
+        dialogue: "* At the moment of your explosive outburst, he grabs firm hold of your shoulders *"
     },
     {
         name: "Edmonten Xaviar",
-        dialogue: "Listen to me… Turn back, abandon this course, only doom awaits you at its end, I implore you good sir… do not inquire further"
+        dialogue: "Listen to me… Turn back, abandon this course, only doom awaits you at its end, I implore you good sir… do not inquire further."
     },
     {
         name: "...",
-        dialogue: "*His voice was hoarse with fear as he continued*"
+        dialogue: "* His voice was hoarse with fear as he continued *"
     },
     {
         name: "Edmonten Xaviar",
@@ -124,23 +124,23 @@ const WharfDialogue = [
     },
     {
         name: "Edmonten Xaviar",
-        dialogue: "You would think me mad… only if you see for yourself will you understand… only then will it become clear what is happening"
+        dialogue: "You would think me mad… only if you see for yourself will you understand… only then will it become clear what is happening."
     },
     {
         name: "...",
-        dialogue: "*With that final insight, he climbed back aboard his vessel, and descended into the cabin*"
+        dialogue: "* With that final insight, he climbed back aboard his vessel, and descended into the cabin *"
     },
     {
         name: "...",
-        dialogue: "*You watch him depart, a mixture of confusion and concern*"
+        dialogue: "* You watch him depart, a mixture of confusion and concern *"
     },
     {
         name: "...",
-        dialogue: "*Just what was all of that?*"
+        dialogue: "* Just what was all of that? *"
     },
     {
         name: "...",
-        dialogue: "*We should return to our office and go over everything we’ve learned so far*"
+        dialogue: "* You should return to your office and go over everything you’ve learned thus far *"
     }
 ]
 
