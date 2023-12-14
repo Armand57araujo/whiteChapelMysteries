@@ -7,13 +7,13 @@ const resolvers = {
       
       if(context.user) {
         const user = await User.findOne({_id:context.user._id})
-        return await Save.findOne({ _id: user.currentSave });
+        return await Save.findOne({ _id: user.currentSave }).populate('inventory');
       }
       throw AuthenticationError;
     },
     me: async (parent, args, context) => {
       if(context.user) {
-        return await User.findOne({ _id: context.user._id }).populate('saves');
+        return await User.findOne({ _id: context.user._id }).populate('saves').populate('inventory');
       }
       throw AuthenticationError;
     }

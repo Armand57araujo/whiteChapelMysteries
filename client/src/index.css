@@ -68,8 +68,15 @@ body {
   height: 100%;
   width: 70%;
   z-index: 3;
+  background-image: url('assets/images/office/inventory.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.z-4 {
+  z-index: 4;
+}
 #mitreBG{
   position: absolute;
   top: 0;
@@ -249,11 +256,36 @@ body {
   left: 72%;
 }
 
+.inventory-title {
+  position: absolute;
+  background-color: #1a1a1a7a;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  top: 20px
+}
+
+.inventory-list {
+  position: absolute;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  top: 200px;
+  max-width: 70%;
+}
+
+.inventory-item {
+  position: relative;
+  top: px;
+  left: 100px;
+  background-color: #1a1a1a7a;
+}
+
 #officeBtn{
   z-index: 4;
   position: absolute;
   top: 20px;
-  left: 320px;
+  left: 40px;
 }
 
 #backBtn:hover {
