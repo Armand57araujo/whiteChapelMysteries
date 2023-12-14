@@ -13,7 +13,7 @@ const AboutUs = () => {
     const sound = new Howl({
 
     
-      src: ['/public/assets/sounds/theNight.mp3'],
+      src: ['/assets/sounds/theNight.mp3'],
       autoplay: true,
       loop: true,
       volume: .4,
