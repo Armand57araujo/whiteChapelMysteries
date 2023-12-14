@@ -2,8 +2,9 @@ let currentInventory = ['item1','item2','item3','item4','item5']
 
 const Inventory = (props) => {
 
+  
     // const bag = JSON.parse(localStorage.getItem('inventory')) || [];
-    const bag = [{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'}];
+    const bag = [{itemName: 'Scratched Bolt', description: 'A bolt found on Druward Street. It seems to have some scratches on it'},{itemName: 'Cracked Bolt', description: 'A bolt found on Hanbury Street. It appears to have been split in two.'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'}];
     
 
     return(
@@ -20,13 +21,15 @@ const Inventory = (props) => {
                 </div>
             </div>
             
-            {bag.length < 1 ? (<div>No Items to show</div>):<div className='inventory-list container align-items-center justify-content-center'>
+            {bag.length < 1 ? (<div>No Items to show</div>) : <div className='inventory-list container align-items-center justify-content-center'>
                 {bag.map((item) => {
-                console.log(item);
-                return (
-                    <div className="inventory-item">
-                        Item: {item.itemName}<br/> Description: {item.description} 
+                    console.log(item);
+                    return (
+                <div className="inventory-item centerinv border" >
+                    <div>
+                        Item: {item.itemName}<br /> Description: <br></br> {item.description}
                     </div>
+                </div>
                 )
             })}
             </div>}
