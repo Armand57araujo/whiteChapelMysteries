@@ -3,18 +3,18 @@ import TypingWithSound from '../components/TypingWithSound'
 const HanburyDialogue = [
     {
         name: "...",
-        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with {woman#2} again regarding the murder nearby.*"
+        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with Patrica again regarding the murder nearby.*"
     },
     {
         name: "...",
-        dialogue: "*No sooner had you arrived, did {woman#2} arrive to meet you*"
+        dialogue: "*No sooner had you arrived, did Patrisha arrive to meet you*"
     },
     {
-        name: "MC",
-        dialogue: "Good evening, Miss {woman#2}."
+        name: "Mac",
+        dialogue: "Good evening, Miss Patrisha."
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "G-Good evenin’ sir"
     },
     {
@@ -26,11 +26,11 @@ const HanburyDialogue = [
         dialogue: "*Understandable considering the horrific case we are associated*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "It’s been some time, I hope you’ve been well"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "Doin’ my best sir… considerin’"
     },
     {
@@ -38,27 +38,27 @@ const HanburyDialogue = [
         dialogue: "*You nod understandingly*"
     },
     {
-        name: "MC",
-        dialogue: "{woman#2}, I’ve come to ask you more questions about that night… the night when you found…"
+        name: "Mac",
+        dialogue: "Patrisha, I’ve come to ask you more questions about that night… the night when you found…"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "{respective victim}"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Yes…"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "….he’s come back…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I don’t wish to frighten you madam, when I say I do not believe he ever truly left."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "That is why I need to ask you everything I possibly can about that night again."
     },
     {
@@ -70,7 +70,7 @@ const HanburyDialogue = [
         dialogue: "Y-yes, sir."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Thank you, when you’re prepared madam"
     },
     {
@@ -78,31 +78,31 @@ const HanburyDialogue = [
         dialogue: "*she takes a breath*"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "That night… I heard heated voices. A man and a woman… {respective victim}. She’d walked into that alley where they… where I… found her… and the gentleman followed her…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Can you describe him again?"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "Honestly sir he was an common enough lookin’ bloke… just one of those faces…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I understand… but any information might help…"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "…yes sir. He wasn’t very tall… about average height… light-hair… a slightly wider build"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Good good… every detail helps"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "O-Ok"
     },
     {
@@ -114,11 +114,11 @@ const HanburyDialogue = [
         dialogue: "*What came next was horrifying beyond measure*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "*You place your hand on her shoulder, and give her a reassuring smile*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Take your time"
     },
     {
@@ -126,23 +126,23 @@ const HanburyDialogue = [
         dialogue: "*She nods, then proceeds*"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "That’s when… that’s when I heard it… that horrible, sickenin’ sound… like a butcher cleavin’ through game."
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "The man came runnin’ out… covered in blood, pale as a sheet… fleein’ quickly"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "I don’t know what took hold of me… but I had to know what happened… what was the sound?… what was all that blood?… was she ok?… my nightmares curse me at night for my curiosity to this day sir"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "There she was… bloodied from head to toe… torn open like… like… sir I’d never seen nothin so horrible in all my life"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I know… believe me madam… I know"
     },
     {
@@ -150,7 +150,7 @@ const HanburyDialogue = [
         dialogue: "*You pause as you see her trembling, you don’t know what to say…*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "My sincerest apologies for having to question you on such an unpleasant matter… I beg your forgiveness in all this… and will leave you in peace"
     },
     {
@@ -158,31 +158,31 @@ const HanburyDialogue = [
         dialogue: "*You turn to leave. But that’s when she grabs hold of your arm*"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "I-I… I can’t tell what was real and what is solely of my nightmares invention… what if it was real sir? What if it wasn’t a terror of my mind…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "W-What… what are you— ?"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "The figure sir, that night, tall and loomin’ in the darkness… starin’ into me soul. It seemed almost... malformed… like a shadows meldin together in the dark, constantly shiftin."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I… I understa—"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "It’s in the shadows! It’S iN ThE shADOwS!! IT’S IN THE SHADOWS!!!"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I’m… I’m so sorry… so very sorry…"
     },
     {
-        name: "{woman#2}",
+        name: "Patrisha",
         dialogue: "Let it end… please make it end…"
     },
     {
@@ -190,7 +190,7 @@ const HanburyDialogue = [
         dialogue: "*Her pleading words echo to your core, deepening your resolve and determination*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I will end this… I *will* find him"
     },
     {

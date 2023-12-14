@@ -1,20 +1,21 @@
-import TypingWithSound from '/src/components/TypingWithSound.jsx'
+import TypingWithSound from '../components/TypingWithSound.jsx'
+import AutoSave from '../components/AutoSave';
 
 const WharfDialogue = [
     {
         name: "...",
-        dialogue: "*You arrive at the Wharf, and begin asking around for {fisherman}. Eventually you find yourself at his vessel and make your way over. A seafaring gentleman is cleaning his nets when you approach.*"
+        dialogue: "*You arrive at the Wharf, and begin asking around for Edmonten Xaviar. Eventually you find yourself at his vessel and make your way over. A seafaring gentleman is cleaning his nets when you approach.*"
     },
     {
-        name: "MC",
-        dialogue: "{fisherman} I presume?"
+        name: "Mac",
+        dialogue: "Edmonten Xaviar I presume?"
     },
     {
-        name: "{fisherman}",
-        dialogue: "Yes… can I help you sir?"
+        name: "Edmonten Xaviar",
+        dialogue: "It's Edmonten Xaviar Fredick Chadwick Sr to you! can I help you sir?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "That’s what I’m here to determine."
     },
     {
@@ -30,39 +31,39 @@ const WharfDialogue = [
         dialogue: "*Could he be The Ripper?*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "It’s come to my attention that you were present at the scene of one of The Ripper’s killings..."
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "T-There… there was nothing to tell or come forward about… I-I…I didn’t see anything… I swear to you sir"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I’m not sure I believe that sir… but I digress. What were you doing there at such an hour?"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "I…. I…. I can’t…. I can’t say… sir…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "You’ll answer me now good sir, while my altruistic mood persists"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "I… I was… I was looking for… for someone…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "And who was it exactly you were looking for? Hmmm? Was it one of the victims?"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "N-NO SIR! I swear to you on my mother’s grave I had no part in that depravity… I swear it!"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Then who were you looking for?"
     },
     {
@@ -70,7 +71,7 @@ const WharfDialogue = [
         dialogue: "*He turned pale as a sheet*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "And do they know anything about what has been happening?"
     },
     {
@@ -82,7 +83,7 @@ const WharfDialogue = [
         dialogue: "*Your eyes narrow*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "You know who it is… you know who’s responsible don’t you?"
     },
     {
@@ -90,15 +91,15 @@ const WharfDialogue = [
         dialogue: "*His eyes grow wide with fear at your words*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Tell me who it is… tell me now!"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "Y-Y…you can’t… I can’t… sh… sh…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "TELL ME WHO IT IS NOW !!!"
     },
     {
@@ -106,7 +107,7 @@ const WharfDialogue = [
         dialogue: "*At the moment of your explosive outburst, he grabs firm hold of your shoulders*"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "Listen to me… Turn back, abandon this course, only doom awaits you at its end, I implore you good sir… do not inquire further"
     },
     {
@@ -114,15 +115,15 @@ const WharfDialogue = [
         dialogue: "*His voice was hoarse with fear as he continued*"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "If this is the course you wish to take… than I have to ask. If you have not already, study each scene where the victims were murdered… maybe even speak to witnesses again. Find the pieces, and you will find who you are looking for. If you survive… come speak to me again… we will have much to discuss..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "And you do not speak now because?"
     },
     {
-        name: "{fisherman}",
+        name: "Edmonten Xaviar",
         dialogue: "You would think me mad… only if you see for yourself will you understand… only then will it become clear what is happening"
     },
     {
@@ -148,7 +149,7 @@ const Wharf = () => {
     return(
         <div className="text-white">
             <AutoSave />
-            <img id="wharfBG" src="assets/images/locations/wharf.png"></img>
+            <img id="wharfBG"src="assets/images/locations/wharf.png"></img>
             <h1>
             <TypingWithSound
                     arr={WharfDialogue}

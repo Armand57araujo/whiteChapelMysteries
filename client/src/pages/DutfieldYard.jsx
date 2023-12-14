@@ -4,34 +4,34 @@ import TypingWithSound from '/src/components/TypingWithSound.jsx'
 const DutfieldDialogue = [
     {
         name: "...",
-        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with {woman#4} again regarding the murder nearby.*"
+        dialogue: "*You arrive at Dutfield Yard and make your way to the scene of the crime, where you have sent word that you wish to speak with Sofia again regarding the murder nearby.*"
     },
     {
         name: "...",
-        dialogue: "*No sooner had you arrived, did {woman#4} arrive to meet you*"
+        dialogue: "*No sooner had you arrived, did Sofia arrive to meet you*"
     },
     {
-        name: "MC",
-        dialogue: "Hello {woman#4}, I hope you’ve been well"
+        name: "Mac",
+        dialogue: "Hello Sofia, I hope you’ve been well"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "Hello again Detective. Yes, as well as can be expected. And you?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "…Determined to see this all come to a close, which is my reason for having come here"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "I’m sure… anything I can do to help I shall do my best"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I am most grateful. On the night in question you said from your upper story on your shop that you had seen someone roaming the street in the darkness, is that correct?"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "Indeed. I had closed the shop as all deliveries for the recent Morton Family funeral had been completed..."
     },
     {
@@ -43,15 +43,15 @@ const DutfieldDialogue = [
         dialogue: "*Even so… there were signs that the recollection did bother her*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I’m sorry you had to experience that. I know it had to be terrifying"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "That’s White Chapel for you these days… pray the good Lord brings all safely through this all…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Indeed Madam. Was there anything else you could remember?"
     },
     {
@@ -63,23 +63,23 @@ const DutfieldDialogue = [
         dialogue: "*This was the first time her pleasant expression changed to one of guilt*"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "Well…"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Don’t worry, I will hear you out no matter what"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "Thank you Detective, though that isn’t what vexes me from speaking..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Madam… I implore you… if there is any information you are withholding please be forthcoming here and now as it could mean the difference in saving people’s lives"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "I am aware of this Detective, however if I set you on this person to confront and question..."
     },
     {
@@ -87,7 +87,7 @@ const DutfieldDialogue = [
         dialogue: "*You pause and consider her reasoning*"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Madam, if you tell me of this person, then you have my word that no official enquiry will be made..."
     },
     {
@@ -95,27 +95,27 @@ const DutfieldDialogue = [
         dialogue: "*She pauses and considering your words*"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "If it is as you say… that night, after I had mustered the courage to leave my shop..."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "You’re certain madam?"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "As I said sir, I know him quite well, I’m sure it was him"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Very well then. Thank you Madam, your assistance is greatly appreciated"
     },
     {
-        name: "{woman#4}",
+        name: "Sofia",
         dialogue: "Pleased to be of help sir. Be safe sir… dark times these are"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "And to you madam"
     },
     {
