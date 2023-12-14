@@ -116,13 +116,15 @@ const resolvers = {
       }
     }
     ,
-    setCurrentSave: async(parent, args, context) => {
+    setCurrentSave: async(parent, {location}, context) => {
       if(context.user) {
         console.log('context user', context.user.saves)
+        console.log('args', location);
+        console.log('context save', context.user.saves[location]);
         const user = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { currentSave: context.user.saves[args] },
-          { new: true });
+          { currentSave: context.user.saves[location] },
+          { new: true }).populate('saves')
 
         if(!user) {
           throw AuthenticationError;

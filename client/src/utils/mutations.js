@@ -105,7 +105,6 @@ export const SET_CURRENT = gql`
                     notes
                 }
                 currentSave
-
             }
         }
     }`

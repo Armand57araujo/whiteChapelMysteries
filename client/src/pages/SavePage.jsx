@@ -8,7 +8,7 @@ import Auth from '../utils/auth';
 
 const Save = () => {
     const { loading , data } = useQuery(GET_ME);
-    const [ setCurrent ] = useMutation(SET_CURRENT);
+    const [ setCurrent, {error} ] = useMutation(SET_CURRENT);
     const [ savePlus ] = useMutation(ADD_SAVE);
     const firstdataArray = data?.me.saves || [];
     console.log(firstdataArray)
@@ -26,11 +26,11 @@ const Save = () => {
     }
 
     const chooseSave = async (event) => {
-        event.preventDefault();
-        const choice = event.target.getAttribute('data-index')
+        let choice = parseInt(event.target.getAttribute('data-index'));
         console.log(`Clicked button`, choice);
-        
-        const current = await setCurrent({variables: parseInt(choice)})
+        console.log('typeof', typeof 2);
+
+        const current = await setCurrent({variables: {location: choice}});
 
         if(!current) {
             throw new Error('something went wrong!');
