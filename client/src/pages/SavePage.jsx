@@ -35,7 +35,7 @@ const Save = () => {
             throw new Error('something went wrong!');
         }
 
-        // window.location.replace('/office');
+        window.location.replace('/office');
     }
     return (
         <div>
@@ -49,11 +49,11 @@ const Save = () => {
                         </div>
                         <div>
                             {firstdataArray.map((item, index) => {
-                                console.log(item);
+                                console.log('item', item);
                             
                                 return (
                                     <button className='margin-top container d-flex align-items-center justify-content-center' data-index={index} key={index} onClick={chooseSave}>
-                                        Save {index+1}<br/>inventory: {item.inventory} <br/> notes: {item.notes}
+                                        Save {index+1}<br/>inventory: {item.inventory.length} item(s) <br/> notes: {item.notes}
                                     </button>
                                 )
                             })}

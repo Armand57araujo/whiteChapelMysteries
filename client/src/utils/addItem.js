@@ -1,6 +1,7 @@
 function addItem() {
   const pathName = window.location.pathname;
   const inventory = JSON.parse(localStorage.getItem('inventory')) || [];
+  console.log('inventory', inventory)
   let item = '';
 
   switch(pathName) {
@@ -16,7 +17,7 @@ function addItem() {
     break;
     default: break;
   }
-  
+
   let found = false;
   inventory.forEach((thing) => {
     if(thing.itemName === item.itemName) {

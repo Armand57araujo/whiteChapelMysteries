@@ -23,13 +23,13 @@ const AutoSave = () => {
 
     const userProfile = Auth.getProfile().data;
     try {
-      console.log('userProfile', userProfile);
-      const inventory = localStorage.getItem('inventory') || [];
-      console.log('inventory', inventory);
+      console.log('userProfile front', userProfile);
+      const inventory = JSON.parse(localStorage.getItem('inventory')) || [];
+      console.log('inventory front', inventory);
       const notes = localStorage.getItem('notes') || '';
-      console.log('notes', notes);
+      console.log('notes front', notes);
       const update = await updateSave({
-        variables: { inventory: inventory, notes: notes }
+        variables: { inventory: JSON.stringify(inventory), notes: notes }
       })
 
       if (!update) {
