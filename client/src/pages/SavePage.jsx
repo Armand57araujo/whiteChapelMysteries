@@ -35,7 +35,11 @@ const Save = () => {
         if(!current) {
             throw new Error('something went wrong!');
         }
-
+        console.log('current', current);
+        const tempSave = current.data.setCurrentSave.user.saves[choice]
+        localStorage.setItem('notes', tempSave.notes);
+        console.log('inventory', tempSave.inventory);
+        localStorage.setItem('inventory', JSON.stringify(tempSave.inventory))
         window.location.replace('/office');
     }
 
