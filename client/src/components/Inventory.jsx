@@ -24,9 +24,11 @@ const Inventory = (props) => {
                 {bag.map((item) => {
                 console.log(item);
                 return (
-                    <div className="inventory-item">
+                <div className="">
+                    <div className="inventory-item margin-top container d-flex align-items-center justify-content-center" >
                         Item: {item.itemName}<br/> Description: {item.description} 
                     </div>
+                </div>
                 )
             })}
             </div>}
