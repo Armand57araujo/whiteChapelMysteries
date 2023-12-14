@@ -289,22 +289,19 @@ body {
   color: white;
   text-align: center;
   border-radius: 10px;
-  top: 20px
+  top: 20px;
 }
 
 .inventory-list {
-  position: absolute;
   color: white;
   text-align: center;
-  border-radius: 10px;
-  top: 200px;
+  border: 3px solid white;
+  border-radius: 20px;
   max-width: 70%;
+
 }
 
 .inventory-item {
-  position: relative;
-  top: px;
-  left: 100px;
   background-color: #1a1a1a7a;
 }
 
@@ -416,3 +413,8 @@ button:focus-visible {
     /* background-color: #f9f9f9; */
   /* }
 } */ 
+
+.centerinv{
+  display: flex;
+  justify-content: center;
+}
