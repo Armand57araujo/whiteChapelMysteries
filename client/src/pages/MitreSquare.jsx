@@ -7,15 +7,15 @@ import { useState } from 'react';
 
 const MitreSquareDialogue = [
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Another victim... ",
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "This is intolerable... he's still out here... he's still butchering them... killing them like some rabid animal...",
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "One day soon we'll put him down for good... this JACK THE RIPPER..."
     },
     {
@@ -28,27 +28,27 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* Among them you see {woman#1 name} trying her best to remain calm amidst the chaos *"
+        dialogue: "* Among them you see Chloe trying her best to remain calm amidst the chaos *"
     },
     {
         name: "...",
         dialogue: "* You make your way over to speak with her at the police perimeter *"
     },
     {
-        name: "MC",
-        dialogue: "{woman#1 name}... I'm at a loss, I can hardly bid you good evening under the circumstances"
+        name: "Mac",
+        dialogue: "Chloe... I'm at a loss, I can hardly bid you good evening under the circumstances"
     },
     {
-        name: "{woman#1 name}",
+        name: "Chloe",
         dialogue: "It's him again... isn't it...?"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "My intent is not to be deceptive... but I must tell you like I have told others, that it is too soon to tell"
     },
 
     {
-        name: "{woman#1 name}",
+        name: "Chloe",
         dialogue: "Your best guess then good sir"
     },
 
@@ -61,15 +61,15 @@ const MitreSquareDialogue = [
         dialogue: "* You turn back to look at her, and with a heavy sigh, you speak again. *"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "My *guess* is that our brief reprieve from his tyranny is at an end."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "As I had told my superiors during these past weeks of silence on his part, I do not beleive this is someone who is simply mad, but on a cruel and evil mission."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Someone of that inclination does not simply stop, not until they are sated"
     },
 
@@ -83,20 +83,20 @@ const MitreSquareDialogue = [
         dialogue: "* You place your hand on her shoulder to comfort her *"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Keep your girls inside for the time being, and if you can, keep a watchful eye on them, I will do my best to keep you informed of any new developments, don't take on any unknown or suspicious clients."
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I will catch this monster, I swear it."
     },
     
     {
-        name: "{woman#1 name}",
+        name: "Chloe",
         dialogue: "Thank you Mac, thank you so much"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "Be safe Madame"
     },
     {
@@ -125,7 +125,7 @@ const MitreSquareDialogue = [
         dialogue: "* Did it belong to the victim... or the suspect...? *"
     },
     {
-        name: "MC",
+        name: "Mac",
         dialogue: "I should get back to my office, and take a look at everything we have so far."
     },
 ]
