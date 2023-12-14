@@ -2,8 +2,9 @@ let currentInventory = ['item1','item2','item3','item4','item5']
 
 const Inventory = (props) => {
 
+  
     // const bag = JSON.parse(localStorage.getItem('inventory')) || [];
-    const bag = [{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'}];
+    const bag = [{itemName: 'Scratched Bolt', description: 'A bolt found on Druward Street. It seems to have some scratches on it'},{itemName: 'Cracked Bolt', description: 'A bolt found on Hanbury Street. It appears to have been split in two.'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'},{itemName: 'bolt', description: 'description'}];
     
 
     return(
@@ -24,9 +25,11 @@ const Inventory = (props) => {
                 {bag.map((item) => {
                 console.log(item);
                 return (
-                <div className="centerinv">
-                    <div className="inventory-item margin-top container d-flex align-items-center justify-content-center" >
-                        Item: {item.itemName}<br/> Description: {item.description} 
+                <div className="">
+                    <div className="inventory-item centerinv border" >
+                        <div className="">
+                        Item: {item.itemName}<br/> Description <br></br> {item.description} 
+                        </div>
                     </div>
                 </div>
                 )
