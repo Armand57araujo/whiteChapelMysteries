@@ -47,7 +47,7 @@ body {
 
 #notepad-outer {
   position: absolute;
-  background-image: url('assets/images/notepad/notepad.jpg');
+  background-image: url('/assets/images/notepad/notepad.jpg');
   background-repeat: no-repeat;
   margin-top: -450px;
   margin-left: 740px;
