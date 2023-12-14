@@ -21,15 +21,13 @@ const Inventory = (props) => {
                 </div>
             </div>
             
-            {bag.length < 1 ? (<div>No Items to show</div>):<div className='inventory-list container align-items-center justify-content-center'>
+            {bag.length < 1 ? (<div>No Items to show</div>) : <div className='inventory-list container align-items-center justify-content-center'>
                 {bag.map((item) => {
-                console.log(item);
-                return (
-                <div className="">
-                    <div className="inventory-item centerinv border" >
-                        <div className="">
-                        Item: {item.itemName}<br/> Description <br></br> {item.description} 
-                        </div>
+                    console.log(item);
+                    return (
+                <div className="inventory-item centerinv border" >
+                    <div>
+                        Item: {item.itemName}<br /> Description: <br></br> {item.description}
                     </div>
                 </div>
                 )
