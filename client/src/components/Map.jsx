@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-let currentInventory = ['item1','item2','item3','item4','item5','item6']
+let currentInventory = JSON.parse(localStorage.getItem('inventory'));
 
 const Map = (props) => {
     
