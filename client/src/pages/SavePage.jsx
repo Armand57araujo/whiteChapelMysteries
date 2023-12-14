@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { GET_ME, QUERY_SAVE } from "../utils/queries";
+import { GET_ME } from "../utils/queries";
 import { SET_CURRENT, ADD_SAVE } from "../utils/mutations";
 import { useMutation, useQuery } from "@apollo/client";
 import AutoSave from "../components/AutoSave";
+import Auth from '../utils/auth';
 
 
 const Save = () => {
@@ -37,6 +38,10 @@ const Save = () => {
         
         window.location.replace('/office');
     }
+
+    const handleLogout = () => {
+        Auth.logout(); 
+    };
     return (
         <div>
             <AutoSave />
@@ -47,13 +52,16 @@ const Save = () => {
                         <div>
                            <button onClick={addSave} className="saveborder">New Game</button> 
                         </div>
+                        <div className="logoutButton">
+                        <button onClick={handleLogout} className="logoutButton">Logout</button>
+                        </div>
                         <div>
                             {firstdataArray.map((item, index) => {
-                                console.log(item);
+                                console.log('item', item);
                             
                                 return (
                                     <button className='margin-top container d-flex align-items-center justify-content-center' data-index={index} key={index} onClick={chooseSave}>
-                                        Save {index+1}<br/>inventory: {item.inventory} <br/> notes: {item.notes}
+                                        Save {index+1}<br/>inventory: {item.inventory.length} item(s) <br/> notes: {item.notes}
                                     </button>
                                 )
                             })}
