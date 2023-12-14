@@ -19,5 +19,8 @@
   "dependencies": {
     "vite": "^5.0.8",
     "concurrently": "^5.1.0"
+  },
+  "engines": {
+    "npm": "9.x"
   }
 }

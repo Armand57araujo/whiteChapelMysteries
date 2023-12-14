@@ -31,6 +31,33 @@ body {
 
 }
 
+#notepad-inner {
+  position: absolute;
+  resize: none;
+  background: transparent;
+  border: none;
+  color: black;
+  outline: none;
+  margin-top: 50px;
+  margin-left: 25px;
+  height: 490px;
+  width: 360px;
+  z-index: 4;
+}
+
+#notepad-outer {
+  position: absolute;
+  background-image: url('/assets/images/notepad/notepad.jpg');
+  background-repeat: no-repeat;
+  margin-top: -450px;
+  margin-left: 740px;
+  height: 580px;
+  width: 394px;
+  z-index: 4;
+  transition: ease-in;
+  transition-duration: 2s;
+}
+
 .homeBackground{
   position: absolute;
   top: 0;
