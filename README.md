@@ -6,20 +6,22 @@ What is White Chapel Mysteries? White Chapel Mysteries is a visual novel game ba
 
 White Chapel Mysteries is a game created by Alonso Ampuero, Jack Seymour, Armand(aka Almond) Araujo, Iab Sills and Tayla Rios. It was created by a group of creative minds who like to game. This game was made for a final project to show off our talents and thingswe have learned throguht out this course. The tools used for this project for client side are: Html, Css, Javascript, React / React-bootstrap, Howler.js, Typed.js. For server side we used: MongoDB, GraphQL, Json Web Token, Vite, Apollo-client. We also got to show that we can figure out new things. For this game we learned to use Type.js and Howler. One fun feature of our game is the note pad and inventory function. We wanted this game to be interactive besides the storytelling part. While we are far from finished and hope to add much more we hope you enjoy...
 
-![Main Page](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.31.59%20PM.png) Screenshot 2023-12-14 at 5.31.59 PM.png
+![Main Page](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.31.59%20PM.png) 
 
-![Office Page](./client/public/assets/images/screenshots/Screenshot 2023-12-14 at 5.34.17 PM.png)
+![Office Page](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.34.17%20PM.png)
 
-![Note Pad](./client/public/assets/images/screenshots/Screenshot 2023-12-14 at 5.34.26 PM.png)
+![Note Pad](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.34.26%20PM.png)
 
-![Inventory](<Screenshot 2023-12-14 at 5.34.35 PM.png>)
+![Inventory](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.34.35%20PM.png)
 
-![Map](<Screenshot 2023-12-14 at 5.34.46 PM.png>)
+![Map](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.34.46%20PM.png)
 
-![Story](<Screenshot 2023-12-14 at 5.33.29 PM.png>)
+![Story](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.33.29%20PM.png)
 
-![Game Save](<Screenshot 2023-12-14 at 5.35.25 PM.png>)
 
-![About Us Page](<Screenshot 2023-12-14 at 5.35.53 PM.png>)
+![Game Save](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.35.25%20PM.png)
+
+
+![About Us Page](./client/public/assets/images/screenshots/Screenshot%202023-12-14%20at%205.35.53%20PM.png)
 
 
