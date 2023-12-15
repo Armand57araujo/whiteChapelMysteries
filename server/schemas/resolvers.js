@@ -62,13 +62,19 @@ const resolvers = {
     addSave: async (parent, args, context) => {
       if(context.user) {
         const save = await Save.create({});
-        await User.findOneAndUpdate(
+        let user = await User.findOneAndUpdate(
           { _id: context.user._id },
           { $addToSet: { saves: save }},
           { new: true }
-        );
+        ).populate('saves');
 
-        return save;
+        user = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { currentSave: save._id},
+          { new: true }
+        )
+        const token = signToken(user)
+        return { token, user};
       }
       throw AuthenticationError;
     },
@@ -104,30 +110,34 @@ const resolvers = {
         );
       }
     },
-    removeSave: async(parent, args, context) => {
+    removeSave: async(parent, {location}, context) => {
+      console.log(context.user);
       if(context.user) {
-        const save = await Save.findOneAndDelete({_id: args._id});
-
+        const save = await Save.findOneAndDelete({_id: context.user.saves[location]});
         if(!save) {
           throw AuthenticationError;
         }
-        
-        return save;
-      }
-    }
-    ,
-    setCurrentSave: async(parent, args, context) => {
-      if(context.user) {
-        console.log('context user', context.user.saves)
+
         const user = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { currentSave: context.user.saves[args] },
-          { new: true });
-
+          { $pull: { saves: { _id: context.user.saves[location]}}},
+          { new: true }).populate('saves');
         if(!user) {
           throw AuthenticationError;
         }
-
+        const token = signToken(user);
+        return { token, user };
+      }
+    },
+    setCurrentSave: async(parent, { location }, context) => {
+      if(context.user) {
+        const user = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { currentSave: context.user.saves[location] },
+          { new: true }).populate('saves')
+        if(!user) {
+          throw AuthenticationError;
+        }
         const token = signToken(user);
         return { token, user };
       }

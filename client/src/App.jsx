@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import DialogueBox from './components/DialogueBox';
 import {
   ApolloClient,
   InMemoryCache,

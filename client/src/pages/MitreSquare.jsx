@@ -12,7 +12,7 @@ const MitreSquareDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "This is intolerable... he's still out here... he's still butchering them... killing them like some rabid animal...",
+        dialogue: "This is intolerable... he's still out there... he's still butchering them... killing them like some rabid animal...",
     },
     {
         name: "Mac",
@@ -24,11 +24,11 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* You can clearly hear them murmuring all manner of hysterical mutterings as the y wrestle with terrible reality that hs come to London *"
+        dialogue: "* You can clearly hear them murmuring all manner of hysterical mutterings as they wrestle with the terrible reality that has come to London *"
     },
     {
         name: "...",
-        dialogue: "* Among them you see Chloe trying her best to remain calm amidst the chaos *"
+        dialogue: "* Among them you see a familiar face trying her best to remain calm amidst the chaos *"
     },
     {
         name: "...",
@@ -36,7 +36,7 @@ const MitreSquareDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "Chloe... I'm at a loss, I can hardly bid you good evening under the circumstances"
+        dialogue: "Chloe... I'm at a loss, I can hardly bid you a good evening under these circumstances"
     },
     {
         name: "Chloe",
@@ -44,12 +44,12 @@ const MitreSquareDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "My intent is not to be deceptive... but I must tell you like I have told others, that it is too soon to tell"
+        dialogue: "My intent is not to be deceptive... but I must let you know, like I have told others, it is too soon to tell"
     },
 
     {
         name: "Chloe",
-        dialogue: "Your best guess then good sir"
+        dialogue: "Your best guess then, good sir?"
     },
 
     {
@@ -58,15 +58,15 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* You turn back to look at her, and with a heavy sigh, you speak again. *"
+        dialogue: "* You turn back to look at her, and let out a heavy sigh. *"
     },
     {
         name: "Mac",
-        dialogue: "My *guess* is that our brief reprieve from his tyranny is at an end."
+        dialogue: "My 'guess' is that our brief reprieve from his tyranny is at an end."
     },
     {
         name: "Mac",
-        dialogue: "As I had told my superiors during these past weeks of silence on his part, I do not beleive this is someone who is simply mad, but on a cruel and evil mission."
+        dialogue: "As I had told my superiors during these past weeks of silence, I do not believe this is someone who is simply mad, but on a cruel and evil mission."
     },
     {
         name: "Mac",
@@ -101,11 +101,11 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* She departs looking less concerned then she had prior. However, you turn back to the body with renewed indignation."
+        dialogue: "* She departs looking less concerned than she had prior. However, you turn back to the body with renewed indignation. *"
     },
     {
         name: "...",
-        dialogue: "* One way or another this will end. At that moment, that is when you notice something on the ground. *"
+        dialogue: "* 'One way or another this will end' you think to yourself. At that moment, you notice something on the ground. *"
     },
     {
         name: "...",
@@ -113,7 +113,7 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* It seemed out of place among the miscellanious items that littered the alley. *"
+        dialogue: "* It seemed out of place amongst the miscellaneous items that littered the alleyway. *"
     },
 
     {
@@ -122,11 +122,11 @@ const MitreSquareDialogue = [
     },
     {
         name: "...",
-        dialogue: "* Did it belong to the victim... or the suspect...? *"
+        dialogue: "* Did it belong to the victim...? Or the suspect...? *"
     },
     {
         name: "Mac",
-        dialogue: "I should get back to my office, and take a look at everything we have so far."
+        dialogue: "I should get back to my office, and take notes on the situation."
     },
 ]
 

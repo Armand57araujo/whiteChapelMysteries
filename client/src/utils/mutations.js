@@ -42,12 +42,19 @@ export const ADD_USER = gql`
 export const ADD_SAVE = gql`
     mutation addSave{
         addSave{
+            token
+            user {
+                _id
+                saves {
                     _id
                     inventory {
                         itemName
                         description
                     }
                     notes
+                }
+                currentSave
+            }
         }
     }
 
@@ -80,15 +87,23 @@ export const ADD_ITEM = gql`
 `;
 
 export const REMOVE_SAVE = gql`
-    mutation removeSave($saveId: ID!){
-        removeSave(saveId: $saveId){
-            user{
+    mutation removeSave($location: Int){
+        removeSave(location: $location){
+            token
+            user {
                 _id
+                saves {
+                    _id
+                    inventory {
+                        itemName
+                        description
+                    }
+                    notes
+                }
+                currentSave
             }
         }
-    }
-
-`;
+    }`;
 
 export const SET_CURRENT = gql`
     mutation setCurrentSave($location: Int){
@@ -105,7 +120,6 @@ export const SET_CURRENT = gql`
                     notes
                 }
                 currentSave
-
             }
         }
-    }`
+    }`;

@@ -4,11 +4,11 @@ import AutoSave from '../components/AutoSave';
 const DruwardDialogue = [
     {
         name: "...",
-        dialogue: "*You arrive at {location} and make your way to {respective alley}, where you have sent word that you wish to speak with Priya again regarding the murder nearby.*"
+        dialogue: "* You arrive at Druward Street and make your way to the alley where you have sent word that you wish to speak with Priya again regarding the nearby murder. *"
     },
     {
         name: "...",
-        dialogue: "*No sooner had you arrived, did Priya arrive to meet you*"
+        dialogue: "*Not long after you arrive, Priya seems to appear from nowhere *"
     },
     {
         name: "Mac",
@@ -16,15 +16,15 @@ const DruwardDialogue = [
     },
     {
         name: "Priya",
-        dialogue: "Got customers to see to, so please kindly get on with it, would ya?"
+        dialogue: "Got customers to see as well, so please kindly get on with it, would ya?"
     },
     {
         name: "...",
-        dialogue: "*Despite her prickly demeanor, looking at her, it was clear she was uncomfortable… no… terrified of being out at this time of night*"
+        dialogue: "* Despite her prickly demeanor, looking at her, it was clear as day that she was uncomfortable… no… terrified of being out at this time of night *"
     },
     {
         name: "...",
-        dialogue: "*Best keep it brief then*"
+        dialogue: "* Best keep it brief then *"
     },
     {
         name: "Mac",
@@ -40,11 +40,11 @@ const DruwardDialogue = [
     },
     {
         name: "Priya",
-        dialogue: "As I told you lot before, it was late at night I’d just finished for the night when I heard a scream..."
+        dialogue: "As I told you lot before, it was late at night, and I’d just finished for the night when I heard a scream..."
     },
     {
         name: "Mac",
-        dialogue: "…Except of course… she was in fact murdered in said alley…"
+        dialogue: "…Except of course… she was in fact murdered in that alley…"
     },
     {
         name: "...",
@@ -52,7 +52,7 @@ const DruwardDialogue = [
     },
     {
         name: "...",
-        dialogue: "*Perhaps it was the first she’d considered that fact. Or more-likely she avoided the idea to assuage her guilt over the matter*"
+        dialogue: "* Perhaps it was the first time she had considered that fact. Or more-likely she avoided the idea to assuage her guilt over the matter *"
     },
     {
         name: "Priya",
@@ -60,7 +60,7 @@ const DruwardDialogue = [
     },
     {
         name: "...",
-        dialogue: "*Her demeanor was a touch more somber now*"
+        dialogue: "* Her demeanor was a touch more somber now *"
     },
     {
         name: "Priya",
@@ -76,15 +76,15 @@ const DruwardDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "Believe me madam… I understand"
+        dialogue: "Believe me madame… I understand"
     },
     {
         name: "Priya",
-        dialogue: "If you understand, find him… and if at all possible, fill him full of holes when you do"
+        dialogue: "If you understand, then find him… and if at all possible, fill him full of holes when you do"
     },
     {
         name: "...",
-        dialogue: "*You smile warmly*"
+        dialogue: "* You smile warmly *"
     },
     {
         name: "Mac",
@@ -96,7 +96,7 @@ const DruwardDialogue = [
     },
     {
         name: "...",
-        dialogue: "*She begins to walk off, but then stops and turns back*"
+        dialogue: "* She begins to walk off, but then stops and turns back *"
     },
     {
         name: "Priya",
@@ -104,23 +104,23 @@ const DruwardDialogue = [
     },
     {
         name: "Mac",
-        dialogue: "What is that madam?"
+        dialogue: "What is that madame?"
     },
     {
         name: "Priya",
-        dialogue: "She was running away from someone, which means that at some point they were behind her if they were chasing her..."
+        dialogue: "She was running away from something, which may mean that at some point someone was chasing her..."
     },
     {
         name: "...",
-        dialogue: "*With that last insight, she took her leave*"
+        dialogue: "* With that last insight, she took her leave *"
     },
     {
         name: "...",
-        dialogue: "*How indeed? You mused as you thought through her words*"
+        dialogue: "* Chased? You mused as you thought through her words *"
     },
     {
         name: "...",
-        dialogue: "*We should return to our office and go over everything we’ve learned so far*"
+        dialogue: "* You should return to your office and go over everything you’ve learned so far *"
     }
 ]
 

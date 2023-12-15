@@ -99,10 +99,21 @@
   margin-top: 20px;
   justify-content: center;
 }
+
 button{
   color: white;
 }
 
+.save-btn {
+  border-radius: 10px 0px 0px 10px; 
+  height: 93px;
+}
+
+.delete-btn {
+  height: 93px;
+  width: 10%;
+  border-radius: 0px 10px 10px 0px;
+}
 
 
 /* added by ian sills chadwick bartholemuel sampsonite the third */
