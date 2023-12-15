@@ -1,5 +1,5 @@
 # whiteChapelMysteries
-github URL: 
+github URL: https://github.com/Armand57araujo/whiteChapelMysteries
 Deployed link URL: http://whitechapelmysteries-fcef7ed93e83.herokuapp.com/
 
 What is White Chapel Mysteries? White Chapel Mysteries is a visual novel game based off of the Jack the Ripper stories. Enjoy the story and discover the secret of the White Chapel Mysteries alongside detective Melville Macnaghten....
