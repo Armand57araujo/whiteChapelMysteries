@@ -10,7 +10,7 @@ White Chapel Mysteries is a game created by Alonso Ampuero, Jack Seymour, Armand
 
 ![Office Page](./client/public/assets/images/screenshots/Screenshot 2023-12-14 at 5.34.17 PM.png)
 
-![Note Pad](Screenshot 2023-12-14 at 5.34.26 PM.png)
+![Note Pad](./client/public/assets/images/screenshots/Screenshot 2023-12-14 at 5.34.26 PM.png)
 
 ![Inventory](<Screenshot 2023-12-14 at 5.34.35 PM.png>)
 
